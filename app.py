@@ -19,6 +19,73 @@ BANDERAS = {
     "Curazao": "cw", "Canadá": "ca", "Australia": "au", "Nueva Zelanda": "nz",
 }
 
+ESTADIOS = {
+    "New York": {
+        "nombre": "MetLife Stadium",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/MetLife_Stadium_-_aerial.jpg/640px-MetLife_Stadium_-_aerial.jpg"
+    },
+    "Los Angeles": {
+        "nombre": "SoFi Stadium",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/SoFi_Stadium_-_aerial_view_%282020%29.jpg/640px-SoFi_Stadium_-_aerial_view_%282020%29.jpg"
+    },
+    "Dallas": {
+        "nombre": "AT&T Stadium",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/AT%26T_Stadium_-_aerial_%282022%29.jpg/640px-AT%26T_Stadium_-_aerial_%282022%29.jpg"
+    },
+    "San Francisco": {
+        "nombre": "Levi's Stadium",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Levi%27s_Stadium_aerial_view.jpg/640px-Levi%27s_Stadium_aerial_view.jpg"
+    },
+    "Miami": {
+        "nombre": "Hard Rock Stadium",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Hard_Rock_Stadium_aerial_%282016%29.jpg/640px-Hard_Rock_Stadium_aerial_%282016%29.jpg"
+    },
+    "Seattle": {
+        "nombre": "Lumen Field",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Lumen_Field_2021.jpg/640px-Lumen_Field_2021.jpg"
+    },
+    "Boston": {
+        "nombre": "Gillette Stadium",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Gillette_Stadium_aerial_2019.jpg/640px-Gillette_Stadium_aerial_2019.jpg"
+    },
+    "Kansas City": {
+        "nombre": "Arrowhead Stadium",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Arrowhead_Stadium_aerial_%282021%29.jpg/640px-Arrowhead_Stadium_aerial_%282021%29.jpg"
+    },
+    "Philadelphia": {
+        "nombre": "Lincoln Financial Field",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Lincoln_Financial_Field_aerial_%282022%29.jpg/640px-Lincoln_Financial_Field_aerial_%282022%29.jpg"
+    },
+    "Atlanta": {
+        "nombre": "Mercedes-Benz Stadium",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Mercedes-Benz_Stadium_aerial_%282017%29.jpg/640px-Mercedes-Benz_Stadium_aerial_%282017%29.jpg"
+    },
+    "Houston": {
+        "nombre": "NRG Stadium",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NRG_Stadium_aerial_%282017%29.jpg/640px-NRG_Stadium_aerial_%282017%29.jpg"
+    },
+    "Mexico City": {
+        "nombre": "Estadio Azteca",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/thirty/Estadio_Azteca_aerial.jpg/640px-Estadio_Azteca_aerial.jpg"
+    },
+    "Guadalajara": {
+        "nombre": "Estadio Akron",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Estadio_Akron_2018.jpg/640px-Estadio_Akron_2018.jpg"
+    },
+    "Monterrey": {
+        "nombre": "Estadio BBVA",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Estadio_BBVA_Bancomer.jpg/640px-Estadio_BBVA_Bancomer.jpg"
+    },
+    "Toronto": {
+        "nombre": "BMO Field",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/BMO_Field_2016.jpg/640px-BMO_Field_2016.jpg"
+    },
+    "Vancouver": {
+        "nombre": "BC Place",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/BC_Place_aerial_%282011%29.jpg/640px-BC_Place_aerial_%282011%29.jpg"
+    },
+}
+
 SEDES_UTC = {
     "New York": -4, "Los Angeles": -7, "Dallas": -5, "San Francisco": -7,
     "Miami": -4, "Seattle": -7, "Boston": -4, "Kansas City": -5,
@@ -27,10 +94,10 @@ SEDES_UTC = {
 }
 
 COLORES_POS = {
-    "Portero":       {"dot": "#EF9F27", "line": "#EF9F2733", "label": "#EF9F27", "rating": "#EF9F2799"},
-    "Defensa":       {"dot": "#378ADD", "line": "#378ADD33", "label": "#378ADD", "rating": "#378ADD99"},
-    "Mediocampista": {"dot": "#1D9E75", "line": "#1D9E7533", "label": "#1D9E75", "rating": "#1D9E7599"},
-    "Delantero":     {"dot": "#D85A30", "line": "#D85A3033", "label": "#D85A30", "rating": "#D85A3099"},
+    "Portero":       {"dot": "#EF9F27", "line": "#EF9F2733", "label": "#EF9F27", "rating": "#EF9F27"},
+    "Defensa":       {"dot": "#378ADD", "line": "#378ADD33", "label": "#378ADD", "rating": "#378ADD"},
+    "Mediocampista": {"dot": "#1D9E75", "line": "#1D9E7533", "label": "#1D9E75", "rating": "#1D9E75"},
+    "Delantero":     {"dot": "#D85A30", "line": "#D85A3033", "label": "#D85A30", "rating": "#D85A30"},
 }
 
 def get_bandera_url(equipo):
@@ -79,20 +146,10 @@ def get_partidos_equipo(equipo):
 
 def convertir_hora(fecha_str, hora_str, ciudad):
     utc_sede = SEDES_UTC.get(ciudad, -5)
-    colombia_utc = -5
-    diferencia = utc_sede - colombia_utc
+    diferencia = utc_sede - (-5)
     dt = datetime.strptime(f"{fecha_str} {hora_str}", "%Y-%m-%d %H:%M")
     dt_sede = dt + timedelta(hours=diferencia)
     return dt_sede.strftime("%Y-%m-%d %H:%M"), dt_sede.strftime("%H:%M")
-
-def ciudad_display(ciudad):
-    mapeo = {
-        "New York": "New York / New Jersey",
-        "Mexico City": "Ciudad de México",
-        "San Francisco": "San Francisco",
-        "Philadelphia": "Philadelphia",
-    }
-    return mapeo.get(ciudad, ciudad)
 
 st.set_page_config(
     page_title="Predictor Mundial 2026",
@@ -103,50 +160,50 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-body, .stApp { background-color: #080808 !important; }
+body, .stApp { background-color: #1e2a4a !important; }
 .titulo {
     font-size: 2rem; font-weight: 900; text-align: center;
     letter-spacing: 0.2em; color: #c9a84c;
     margin-bottom: 0.2rem; padding-top: 1rem;
 }
 .subtitulo {
-    font-size: 0.7rem; color: #444; text-align: center;
-    letter-spacing: 0.18em; margin-bottom: 2rem; text-transform: uppercase;
+    font-size: 0.85rem; color: #7f9ab5; text-align: center;
+    letter-spacing: 0.12em; margin-bottom: 2rem; text-transform: uppercase;
 }
 .panel-label {
-    font-size: 0.65rem; font-weight: 700; color: #c9a84c;
-    letter-spacing: 0.15em; text-transform: uppercase;
-    border-bottom: 0.5px solid #1f1f1f; padding-bottom: 8px; margin-bottom: 1rem;
+    font-size: 0.8rem; font-weight: 700; color: #c9a84c;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    border-bottom: 0.5px solid #2d3f6b; padding-bottom: 8px; margin-bottom: 1rem;
 }
 .partido-card {
-    background: #0f0f0f; border: 0.5px solid #1f1f1f;
-    border-radius: 8px; padding: 10px 14px; margin-bottom: 8px;
-    cursor: pointer;
+    background: #162040; border: 0.5px solid #2d3f6b;
+    border-radius: 8px; padding: 12px 16px; margin-bottom: 8px;
 }
-.partido-card:hover { border-color: #c9a84c44; }
-.partido-fecha { font-size: 10px; color: #555; letter-spacing: 0.08em; }
-.partido-equipos { font-size: 13px; color: #fff; font-weight: 500; margin: 2px 0; }
-.partido-ciudad { font-size: 10px; color: #c9a84c; }
+.partido-fecha { font-size: 12px; color: #7f9ab5; letter-spacing: 0.06em; margin-bottom: 4px; }
+.partido-equipos { font-size: 15px; color: #ffffff; font-weight: 600; margin: 2px 0; }
+.partido-ciudad { font-size: 12px; color: #c9a84c; margin-top: 2px; }
+.estadio-nombre { font-size: 12px; color: #7f9ab5; margin-top: 4px; }
 .marcador-box {
-    background: #0f0f0f; border: 0.5px solid #1f1f1f;
+    background: #162040; border: 0.5px solid #2d3f6b;
     border-radius: 8px; padding: 1rem; text-align: center;
 }
-.marcador-box-label { font-size: 0.65rem; color: #555; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
+.marcador-box-label { font-size: 0.75rem; color: #7f9ab5; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
 .marcador-box-score { font-size: 1.8rem; font-weight: 700; color: #c9a84c; }
 .marcador-principal {
-    background: #0d0b00; border: 1px solid #c9a84c55;
+    background: #0d1a3a; border: 1px solid #c9a84c55;
     border-radius: 8px; padding: 1rem; text-align: center;
 }
-.marcador-principal-label { font-size: 0.65rem; color: #c9a84c; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
+.marcador-principal-label { font-size: 0.75rem; color: #c9a84c; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
 .marcador-principal-score { font-size: 2.5rem; font-weight: 900; color: #f0cc6a; letter-spacing: 6px; }
 .stButton > button {
     background: #c9a84c !important; color: #000 !important;
-    font-weight: 800 !important; font-size: 0.8rem !important;
-    letter-spacing: 0.2em !important; text-transform: uppercase !important;
+    font-weight: 800 !important; font-size: 0.85rem !important;
+    letter-spacing: 0.15em !important; text-transform: uppercase !important;
     border: none !important; border-radius: 6px !important;
 }
-div[data-testid="stMetricValue"] { color: #c9a84c !important; }
-div[data-testid="stMetricLabel"] { color: #555 !important; }
+div[data-testid="stMetricValue"] { color: #c9a84c !important; font-size: 1.5rem !important; }
+div[data-testid="stMetricLabel"] { color: #7f9ab5 !important; font-size: 0.85rem !important; }
+.stCheckbox label { color: #b0bec5 !important; font-size: 13px !important; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -156,12 +213,10 @@ st.markdown('<div class="subtitulo">Forma reciente · Ranking FIFA · Ratings ·
 equipos = get_equipos()
 opciones_equipo = ["— Selecciona un equipo —"] + equipos
 
-if "partido_sel" not in st.session_state:
-    st.session_state.partido_sel = None
 if "local_sel" not in st.session_state:
-    st.session_state.local_sel = "— Selecciona un equipo —"
+    st.session_state.local_sel = None
 if "visitante_sel" not in st.session_state:
-    st.session_state.visitante_sel = "— Selecciona un equipo —"
+    st.session_state.visitante_sel = None
 if "ciudad_sel" not in st.session_state:
     st.session_state.ciudad_sel = None
 if "fecha_sel" not in st.session_state:
@@ -179,13 +234,14 @@ if equipo_buscar != "— Selecciona un equipo —":
         pass
     partidos = get_partidos_equipo(equipo_buscar)
     if partidos:
-        st.markdown('<div class="panel-label" style="margin-top:1rem;">Próximos partidos</div>', unsafe_allow_html=True)
+        st.markdown('<div class="panel-label" style="margin-top:1rem;">Partidos programados</div>', unsafe_allow_html=True)
         for p in partidos:
             fecha, hora_col, local, visitante, ciudad = p
             fecha_dt = datetime.strptime(fecha, "%Y-%m-%d")
             fecha_display = fecha_dt.strftime("%d %b %Y")
             _, hora_sede = convertir_hora(fecha, hora_col, ciudad)
-            ciudad_disp = ciudad_display(ciudad)
+            estadio = ESTADIOS.get(ciudad, {})
+            estadio_nombre = estadio.get("nombre", ciudad)
 
             col_info, col_btn = st.columns([4, 1])
             with col_info:
@@ -193,11 +249,12 @@ if equipo_buscar != "— Selecciona un equipo —":
                 <div class="partido-card">
                     <div class="partido-fecha">{fecha_display} · {hora_col} Colombia · {hora_sede} hora local</div>
                     <div class="partido-equipos">{local} vs {visitante}</div>
-                    <div class="partido-ciudad">{ciudad_disp}</div>
+                    <div class="partido-ciudad">{ciudad}</div>
+                    <div class="estadio-nombre">{estadio_nombre}</div>
                 </div>
                 """, unsafe_allow_html=True)
             with col_btn:
-                if st.button("Seleccionar", key=f"btn_{fecha}_{local}_{visitante}"):
+                if st.button("Elegir", key=f"btn_{fecha}_{local}_{visitante}"):
                     st.session_state.local_sel = local
                     st.session_state.visitante_sel = visitante
                     st.session_state.ciudad_sel = ciudad
@@ -214,84 +271,78 @@ if st.session_state.ciudad_sel:
         st.session_state.ciudad_sel
     )
     fecha_dt = datetime.strptime(st.session_state.fecha_sel, "%Y-%m-%d")
-    st.info(f"Partido seleccionado: **{st.session_state.local_sel}** vs **{st.session_state.visitante_sel}** · {fecha_dt.strftime('%d %b %Y')} · {st.session_state.hora_sel} Colombia · {hora_sede} hora local · {ciudad_display(st.session_state.ciudad_sel)}")
+    ciudad = st.session_state.ciudad_sel
+    estadio = ESTADIOS.get(ciudad, {})
 
-col1, col2 = st.columns(2, gap="large")
+    st.markdown(f"""
+    <div style="background:#162040;border:0.5px solid #2d3f6b;border-radius:10px;padding:14px 18px;margin-bottom:1rem;">
+        <div style="font-size:13px;color:#7f9ab5;margin-bottom:4px;">{fecha_dt.strftime('%d %b %Y')} · {st.session_state.hora_sel} Colombia · {hora_sede} hora local</div>
+        <div style="font-size:18px;color:#ffffff;font-weight:700;">{st.session_state.local_sel} vs {st.session_state.visitante_sel}</div>
+        <div style="font-size:13px;color:#c9a84c;margin-top:2px;">{estadio.get('nombre', ciudad)} · {ciudad}</div>
+    </div>
+    """, unsafe_allow_html=True)
 
-def render_equipo(key_prefix, label, equipo_default):
-    st.markdown(f'<div class="panel-label">{label}</div>', unsafe_allow_html=True)
-    idx = opciones_equipo.index(equipo_default) if equipo_default in opciones_equipo else 0
-    equipo = st.selectbox("", opciones_equipo, index=idx, key=f"{key_prefix}_eq", label_visibility="collapsed")
+    if estadio.get("img"):
+        try:
+            st.image(estadio["img"], use_container_width=True, caption=estadio.get("nombre", ""))
+        except:
+            pass
 
-    if equipo == "— Selecciona un equipo —":
-        st.caption("Selecciona un equipo para ver los jugadores.")
-        return equipo, []
+    col1, col2 = st.columns(2, gap="large")
 
-    try:
-        st.image(get_bandera_url(equipo), width=48)
-    except:
-        pass
+    def render_equipo(key_prefix, label, equipo_default):
+        st.markdown(f'<div class="panel-label">{label}</div>', unsafe_allow_html=True)
+        try:
+            st.image(get_bandera_url(equipo_default), width=48)
+        except:
+            pass
+        st.markdown(f"<div style='font-size:16px;color:#fff;font-weight:600;margin-bottom:12px;'>{equipo_default}</div>", unsafe_allow_html=True)
 
-    jugadores = get_jugadores(equipo)
-    titulares = []
-    pos_actual = None
+        jugadores = get_jugadores(equipo_default)
+        titulares = []
+        pos_actual = None
 
-    for nombre, posicion, rating in jugadores:
-        col = COLORES_POS.get(posicion, {"dot": "#555", "line": "#33333333", "label": "#555", "rating": "#55555599"})
-        if posicion != pos_actual:
-            pos_actual = posicion
-            st.markdown(f"""
-            <div style="display:flex;align-items:center;gap:8px;margin-top:12px;margin-bottom:4px;">
-                <div style="width:6px;height:6px;border-radius:50%;background:{col['dot']};flex-shrink:0;"></div>
-                <span style="font-size:9px;font-weight:700;color:{col['label']};letter-spacing:0.14em;text-transform:uppercase;">{posicion}s</span>
-                <div style="flex:1;height:0.5px;background:{col['line']};"></div>
-            </div>
-            """, unsafe_allow_html=True)
-        checked = st.checkbox(f"{nombre}", key=f"{key_prefix}_{nombre}", help=f"Rating: {rating}")
-        if checked:
-            titulares.append(nombre)
-        st.markdown(f'<div style="font-size:11px;color:{col["rating"]};margin-top:-12px;margin-bottom:4px;padding-left:22px;">{rating}</div>', unsafe_allow_html=True)
+        for nombre, posicion, rating in jugadores:
+            col = COLORES_POS.get(posicion, {"dot": "#555", "line": "#33333333", "label": "#7f9ab5", "rating": "#7f9ab5"})
+            if posicion != pos_actual:
+                pos_actual = posicion
+                st.markdown(f"""
+                <div style="display:flex;align-items:center;gap:8px;margin-top:14px;margin-bottom:6px;">
+                    <div style="width:7px;height:7px;border-radius:50%;background:{col['dot']};flex-shrink:0;"></div>
+                    <span style="font-size:11px;font-weight:700;color:{col['label']};letter-spacing:0.12em;text-transform:uppercase;">{posicion}s</span>
+                    <div style="flex:1;height:0.5px;background:{col['line']};"></div>
+                </div>
+                """, unsafe_allow_html=True)
+            checked = st.checkbox(f"{nombre}", key=f"{key_prefix}_{nombre}", help=f"Rating: {rating}")
+            if checked:
+                titulares.append(nombre)
+            st.markdown(f'<div style="font-size:12px;color:{col["rating"]};margin-top:-10px;margin-bottom:6px;padding-left:24px;">{rating}</div>', unsafe_allow_html=True)
 
-    n = len(titulares)
-    if n == 11:
-        rating_once = obtener_rating_once(equipo, titulares)
-        st.success(f"{n}/11 seleccionados · Rating: {rating_once}")
-    elif n > 0:
-        st.warning(f"{n}/11 seleccionados")
-    else:
-        st.caption("Sin selección — promedio del plantel")
+        n = len(titulares)
+        if n == 11:
+            rating_once = obtener_rating_once(equipo_default, titulares)
+            st.success(f"{n}/11 seleccionados · Rating: {rating_once}")
+        elif n > 0:
+            st.warning(f"{n}/11 seleccionados")
+        else:
+            st.caption("Sin selección — promedio del plantel")
 
-    return equipo, titulares
+        return titulares
 
-with col1:
-    local, titulares_local = render_equipo("l", "Equipo local", st.session_state.local_sel)
-with col2:
-    visitante, titulares_visit = render_equipo("v", "Equipo visitante", st.session_state.visitante_sel)
+    with col1:
+        titulares_local = render_equipo("l", "Equipo local", st.session_state.local_sel)
+    with col2:
+        titulares_visit = render_equipo("v", "Equipo visitante", st.session_state.visitante_sel)
 
-st.divider()
+    st.markdown("<br>", unsafe_allow_html=True)
+    predecir = st.button("PREDECIR PARTIDO", type="primary", use_container_width=True)
 
-predecir = st.button("PREDECIR PARTIDO", type="primary", use_container_width=True)
-
-if predecir:
-    if local == "— Selecciona un equipo —" or visitante == "— Selecciona un equipo —":
-        st.error("Selecciona ambos equipos.")
-    elif local == visitante:
-        st.error("Selecciona equipos diferentes.")
-    elif not st.session_state.ciudad_sel:
-        st.error("Selecciona un partido del calendario.")
-    else:
-        fecha_hora_sede, hora_sede = convertir_hora(
-            st.session_state.fecha_sel,
-            st.session_state.hora_sel,
-            st.session_state.ciudad_sel
-        )
-        ciudad = st.session_state.ciudad_sel
-
+    if predecir:
         with st.spinner("Simulando 100.000 partidos..."):
             tl = titulares_local if len(titulares_local) == 11 else None
             tv = titulares_visit if len(titulares_visit) == 11 else None
-            pred = predecir_partido(local, visitante, ciudad, fecha_hora_sede, tl, tv)
-            mc = monte_carlo(local, visitante, ciudad, fecha_hora_sede, tl, tv)
+            pred = predecir_partido(st.session_state.local_sel, st.session_state.visitante_sel, ciudad, fecha_hora_sede, tl, tv)
+            mc = monte_carlo(st.session_state.local_sel, st.session_state.visitante_sel, ciudad, fecha_hora_sede, tl, tv)
 
         st.divider()
 
@@ -303,28 +354,28 @@ if predecir:
         col_f1, col_mid, col_f2 = st.columns([1, 2, 1])
         with col_f1:
             try:
-                st.image(get_bandera_url(local), width=64)
+                st.image(get_bandera_url(st.session_state.local_sel), width=64)
             except:
                 pass
-            st.markdown(f"<div style='color:#c9a84c;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;'>{local}</div>", unsafe_allow_html=True)
-            st.markdown(f"<div style='font-size:28px;font-weight:700;color:#fff;'>{pred['prob_local']}%</div>", unsafe_allow_html=True)
+            st.markdown(f"<div style='color:#c9a84c;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;'>{st.session_state.local_sel}</div>", unsafe_allow_html=True)
+            st.markdown(f"<div style='font-size:32px;font-weight:700;color:#fff;'>{pred['prob_local']}%</div>", unsafe_allow_html=True)
         with col_mid:
-            st.markdown(f"<div style='text-align:center;color:#444;font-size:10px;letter-spacing:0.2em;margin-top:8px;'>EMPATE</div>", unsafe_allow_html=True)
-            st.markdown(f"<div style='text-align:center;font-size:20px;font-weight:500;color:#666;'>{pred['prob_empate']}%</div>", unsafe_allow_html=True)
+            st.markdown(f"<div style='text-align:center;color:#7f9ab5;font-size:12px;letter-spacing:0.2em;margin-top:10px;'>EMPATE</div>", unsafe_allow_html=True)
+            st.markdown(f"<div style='text-align:center;font-size:24px;font-weight:500;color:#b0bec5;'>{pred['prob_empate']}%</div>", unsafe_allow_html=True)
         with col_f2:
             try:
-                st.image(get_bandera_url(visitante), width=64)
+                st.image(get_bandera_url(st.session_state.visitante_sel), width=64)
             except:
                 pass
-            st.markdown(f"<div style='color:#c9a84c;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;'>{visitante}</div>", unsafe_allow_html=True)
-            st.markdown(f"<div style='font-size:28px;font-weight:700;color:#fff;'>{pred['prob_visitante']}%</div>", unsafe_allow_html=True)
+            st.markdown(f"<div style='color:#c9a84c;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;'>{st.session_state.visitante_sel}</div>", unsafe_allow_html=True)
+            st.markdown(f"<div style='font-size:32px;font-weight:700;color:#fff;'>{pred['prob_visitante']}%</div>", unsafe_allow_html=True)
 
         st.markdown("<br>", unsafe_allow_html=True)
 
         col9, col10, col11 = st.columns(3)
         with col9:
             st.markdown(f"""<div class="marcador-box">
-                <div class="marcador-box-label">Si gana {local}</div>
+                <div class="marcador-box-label">Si gana {st.session_state.local_sel}</div>
                 <div class="marcador-box-score">{pred['marcador_si_local']}</div>
             </div>""", unsafe_allow_html=True)
         with col10:
@@ -334,29 +385,32 @@ if predecir:
             </div>""", unsafe_allow_html=True)
         with col11:
             st.markdown(f"""<div class="marcador-box">
-                <div class="marcador-box-label">Si gana {visitante}</div>
+                <div class="marcador-box-label">Si gana {st.session_state.visitante_sel}</div>
                 <div class="marcador-box-score">{pred['marcador_si_visit']}</div>
             </div>""", unsafe_allow_html=True)
 
-        st.markdown(f"<div style='text-align:center;font-size:11px;color:#444;margin-top:8px;'>Si empatan: <span style='color:#c9a84c;'>{pred['marcador_si_empate']}</span></div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align:center;font-size:13px;color:#7f9ab5;margin-top:10px;'>Si empatan: <span style='color:#c9a84c;font-weight:600;'>{pred['marcador_si_empate']}</span></div>", unsafe_allow_html=True)
 
         st.markdown("<br>", unsafe_allow_html=True)
-        st.markdown("<div style='font-size:10px;color:#555;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:10px;'>Top 5 marcadores más probables</div>", unsafe_allow_html=True)
+        st.markdown("<div style='font-size:12px;color:#7f9ab5;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:10px;'>Top 5 marcadores más probables</div>", unsafe_allow_html=True)
         for i, (marcador, prob) in enumerate(mc["top_marcadores"]):
             nums = ["01", "02", "03", "04", "05"]
             c1, c2, c3, c4 = st.columns([0.3, 0.5, 4, 0.7])
             with c1:
-                st.markdown(f"<div style='font-size:10px;color:#333;padding-top:4px;'>{nums[i]}</div>", unsafe_allow_html=True)
+                st.markdown(f"<div style='font-size:12px;color:#7f9ab5;padding-top:4px;'>{nums[i]}</div>", unsafe_allow_html=True)
             with c2:
-                st.markdown(f"<div style='font-size:13px;font-weight:500;color:#fff;padding-top:2px;'>{marcador}</div>", unsafe_allow_html=True)
+                st.markdown(f"<div style='font-size:14px;font-weight:600;color:#fff;padding-top:2px;'>{marcador}</div>", unsafe_allow_html=True)
             with c3:
                 st.progress(min(int(prob * 6), 100))
             with c4:
-                st.markdown(f"<div style='font-size:11px;color:#555;padding-top:4px;text-align:right;'>{prob}%</div>", unsafe_allow_html=True)
+                st.markdown(f"<div style='font-size:12px;color:#7f9ab5;padding-top:4px;text-align:right;'>{prob}%</div>", unsafe_allow_html=True)
 
         st.markdown("<br>", unsafe_allow_html=True)
         col12, col13 = st.columns(2)
         with col12:
-            st.metric(f"Rating {local}", pred["rating_local"])
+            st.metric(f"Rating {st.session_state.local_sel}", pred["rating_local"])
         with col13:
-            st.metric(f"Rating {visitante}", pred["rating_visitante"])
+            st.metric(f"Rating {st.session_state.visitante_sel}", pred["rating_visitante"])
+
+else:
+    st.markdown("<div style='text-align:center;color:#7f9ab5;font-size:14px;margin-top:2rem;'>Selecciona un equipo arriba y elige un partido para comenzar</div>", unsafe_allow_html=True)
