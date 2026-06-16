@@ -1,6 +1,5 @@
 import sqlite3
 import numpy as np
-from scipy.stats import poisson
 from config import RANKING_FIFA
 from partidos import ES_A_EN, calcular_forma
 from clima import obtener_clima_pronostico, factor_clima
@@ -30,9 +29,7 @@ def obtener_rating_once(equipo_es, titulares=None):
         if ratings:
             conn.close()
             return round(sum(ratings) / len(ratings), 1)
-    cursor.execute('''
-        SELECT AVG(rating) FROM jugadores WHERE equipo = ?
-    ''', (equipo_es,))
+    cursor.execute('SELECT AVG(rating) FROM jugadores WHERE equipo = ?', (equipo_es,))
     resultado = cursor.fetchone()[0]
     conn.close()
     return round(resultado, 1) if resultado else 75.0
@@ -55,14 +52,22 @@ def obtener_factor_liga(equipo_es, titulares=None):
             return round(sum(factores) / len(factores), 3)
         conn.close()
         return 1.0
-    cursor.execute('''
-        SELECT liga FROM jugadores WHERE equipo = ?
-    ''', (equipo_es,))
+    cursor.execute('SELECT liga FROM jugadores WHERE equipo = ?', (equipo_es,))
     ligas = [row[0] for row in cursor.fetchall()]
     conn.close()
     if not ligas:
         return 1.0
     return round(sum(LIGA_FACTOR.get(l, 1.0) for l in ligas) / len(ligas), 3)
+
+def obtener_xg(equipo_es):
+    conn = sqlite3.connect("mundial2026.db")
+    cursor = conn.cursor()
+    cursor.execute('SELECT xg, xga FROM xg_equipos WHERE equipo = ?', (equipo_es,))
+    row = cursor.fetchone()
+    conn.close()
+    if row:
+        return row[0], row[1]
+    return None, None
 
 def peso_rival(rival):
     ranking = RANKING_FIFA.get(rival, 150)
@@ -89,7 +94,7 @@ def calcular_lambda(equipo_es, titulares=None):
         FROM partidos_manuales
         WHERE equipo = ?
         ORDER BY fecha DESC
-        LIMIT 10
+        LIMIT 15
     ''', (equipo_es,))
     partidos = cursor.fetchall()
     conn.close()
@@ -100,7 +105,12 @@ def calcular_lambda(equipo_es, titulares=None):
     rating_factor = (rating - 65) / 25
     liga_factor = obtener_factor_liga(equipo_es, titulares)
 
+    # xG real si disponible
+    xg, xga = obtener_xg(equipo_es)
+
     if not partidos:
+        if xg:
+            return max(0.3, xg * liga_factor), max(0.2, xga)
         return max(0.3, ranking_factor * 3.0 * liga_factor), 1.2
 
     goles_favor_pond = 0
@@ -124,8 +134,16 @@ def calcular_lambda(equipo_es, titulares=None):
     goles_por_partido = goles_favor_pond / peso_total
     goles_contra_por_partido = goles_contra_pond / peso_total
 
-    lambda_ataque = ((goles_por_partido * 0.15) + (ranking_factor * 3.0 * 0.55) + (rating_factor * 1.5 * 0.3)) * liga_factor
-    lambda_defensa = goles_contra_por_partido * (1 - rating_factor * 0.25) * (1 / liga_factor)
+    # Combinar forma reciente con xG real
+    if xg:
+        lambda_ataque_base = (goles_por_partido * 0.3) + (xg * 0.7)
+        lambda_defensa_base = (goles_contra_por_partido * 0.3) + (xga * 0.7)
+    else:
+        lambda_ataque_base = (goles_por_partido * 0.15) + (ranking_factor * 3.0 * 0.55) + (rating_factor * 1.5 * 0.3)
+        lambda_defensa_base = goles_contra_por_partido * (1 - rating_factor * 0.25)
+
+    lambda_ataque = lambda_ataque_base * liga_factor
+    lambda_defensa = lambda_defensa_base * (1 / liga_factor)
 
     return max(0.3, lambda_ataque), max(0.2, lambda_defensa)
 
@@ -177,12 +195,17 @@ def monte_carlo(local_es, visitante_es, ciudad=None, fecha_hora=None, titulares_
     marcador_si_visit = mejor_visit[0][0] if mejor_visit else "0-1"
     marcador_si_empate = mejor_empate[0][0] if mejor_empate else "0-0"
 
+    if round(local_gana / iteraciones * 100, 1) >= round(visit_gana / iteraciones * 100, 1):
+        marcador_probable = marcador_si_local
+    else:
+        marcador_probable = marcador_si_visit
+
     return {
         "prob_local_mc": round(local_gana / iteraciones * 100, 1),
         "prob_empate_mc": round(empate / iteraciones * 100, 1),
         "prob_visitante_mc": round(visit_gana / iteraciones * 100, 1),
         "top_marcadores": [(m, round(c/iteraciones*100, 1)) for m, c in top5],
-        "marcador_probable": top5[0][0] if top5 else "1-0",
+        "marcador_probable": marcador_probable,
         "marcador_si_local": marcador_si_local,
         "marcador_si_visit": marcador_si_visit,
         "marcador_si_empate": marcador_si_empate,
@@ -202,11 +225,13 @@ def predecir_partido(local_es, visitante_es, ciudad=None, fecha_hora=None, titul
 
     liga_local = obtener_factor_liga(local_es, titulares_local)
     liga_visitante = obtener_factor_liga(visitante_es, titulares_visit)
+    xg_local, xga_local = obtener_xg(local_es)
+    xg_visit, xga_visit = obtener_xg(visitante_es)
 
     return {
         "local": local_es,
         "visitante": visitante_es,
-        "marcador": mc["top_marcadores"][0][0] if mc["top_marcadores"] else "1-0",
+        "marcador": mc["marcador_probable"],
         "marcador_si_local": mc["marcador_si_local"],
         "marcador_si_visit": mc["marcador_si_visit"],
         "marcador_si_empate": mc["marcador_si_empate"],
@@ -220,6 +245,8 @@ def predecir_partido(local_es, visitante_es, ciudad=None, fecha_hora=None, titul
         "rating_visitante": obtener_rating_once(visitante_es, titulares_visit),
         "liga_local": liga_local,
         "liga_visitante": liga_visitante,
+        "xg_local": xg_local,
+        "xg_visitante": xg_visit,
         "lambda_local": mc["lambda_local"],
         "lambda_visitante": mc["lambda_visitante"],
     }
@@ -244,7 +271,8 @@ if __name__ == "__main__":
 
     pred = predecir_partido(local, visitante, ciudad, fecha_hora, titulares_local, titulares_visit)
 
-    print(f"\nRating: {local} {pred['rating_local']} | {visitante} {pred['rating_visitante']}")
+    print(f"\nxG: {local} {pred['xg_local']} | {visitante} {pred['xg_visitante']}")
+    print(f"Rating: {local} {pred['rating_local']} | {visitante} {pred['rating_visitante']}")
     print(f"Factor liga: {local} {pred['liga_local']} | {visitante} {pred['liga_visitante']}")
     print(f"Lambda: {local} {pred['lambda_local']} | {visitante} {pred['lambda_visitante']}")
 

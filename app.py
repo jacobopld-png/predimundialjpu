@@ -118,54 +118,34 @@ html, body, .stApp, [data-testid="stAppViewContainer"], [data-testid="stMain"] {
 }
 [data-testid="stHeader"] { background-color: #0f172a !important; }
 section[data-testid="stSidebar"] { display: none !important; }
-
 .titulo { font-size: 1.8rem; font-weight: 700; text-align: center; color: #f0cc6a; letter-spacing: 0.15em; padding-top: 1rem; margin-bottom: 4px; }
-.subtitulo { font-size: 0.8rem; color: #64748b; text-align: center; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 2rem; }
-
+.subtitulo { font-size: 0.8rem; color: #64748b; text-align: center; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1rem; }
 .seccion { font-size: 0.7rem; font-weight: 700; color: #94a3b8; letter-spacing: 0.14em; text-transform: uppercase; border-bottom: 1px solid #1e293b; padding-bottom: 6px; margin-bottom: 1rem; }
-
 .partido-card { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 12px 16px; margin-bottom: 8px; }
 .partido-fecha { font-size: 11px; color: #64748b; margin-bottom: 3px; }
 .partido-vs { font-size: 14px; color: #e2e8f0; font-weight: 600; margin-bottom: 2px; }
 .partido-sede { font-size: 11px; color: #f0cc6a; }
-
 .partido-sel { background: #1a1500; border: 1px solid #f0cc6a33; border-radius: 10px; padding: 14px 18px; margin-bottom: 1rem; }
 .partido-sel-fecha { font-size: 12px; color: #64748b; margin-bottom: 4px; }
 .partido-sel-vs { font-size: 17px; color: #e2e8f0; font-weight: 600; }
 .partido-sel-sede { font-size: 12px; color: #f0cc6a; margin-top: 2px; }
-
-.pos-header { display: flex; align-items: center; gap: 8px; margin-top: 14px; margin-bottom: 6px; }
-.pos-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
-.pos-label { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
-.pos-line { flex: 1; height: 1px; }
-
 .marcador-box { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 1rem; text-align: center; }
 .marcador-box-label { font-size: 0.7rem; color: #64748b; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
 .marcador-box-score { font-size: 1.8rem; font-weight: 700; color: #f0cc6a; }
 .marcador-principal { background: #1a1500; border: 1px solid #f0cc6a44; border-radius: 8px; padding: 1rem; text-align: center; }
 .marcador-principal-label { font-size: 0.7rem; color: #f0cc6a; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
 .marcador-principal-score { font-size: 2.5rem; font-weight: 700; color: #f0cc6a; letter-spacing: 6px; }
-
-.stButton > button {
-    background: #f0cc6a !important; color: #0f172a !important;
-    font-weight: 700 !important; font-size: 0.85rem !important;
-    letter-spacing: 0.12em !important; text-transform: uppercase !important;
-    border: none !important; border-radius: 8px !important;
-}
-.stSelectbox label { color: #94a3b8 !important; font-size: 13px !important; }
+.stButton > button { background: #f0cc6a !important; color: #0f172a !important; font-weight: 700 !important; font-size: 0.85rem !important; letter-spacing: 0.12em !important; text-transform: uppercase !important; border: none !important; border-radius: 8px !important; }
 .stSelectbox > div > div { background: #1e293b !important; color: #e2e8f0 !important; border: 1px solid #334155 !important; }
 .stCheckbox label p { color: #cbd5e1 !important; font-size: 13px !important; }
-div[data-testid="stMetricValue"] { color: #f0cc6a !important; font-size: 1.6rem !important; }
+div[data-testid="stMetricValue"] { color: #f0cc6a !important; font-size: 1.4rem !important; }
 div[data-testid="stMetricLabel"] { color: #64748b !important; font-size: 0.8rem !important; }
-.stSuccess { background: #0f2d1a !important; color: #4ade80 !important; border: 1px solid #166534 !important; }
-.stWarning { background: #2d1f0a !important; color: #fb923c !important; }
-.stInfo { background: #0d1f3c !important; color: #93c5fd !important; border: 1px solid #1e40af !important; }
 hr { border-color: #1e293b !important; }
 </style>
 """, unsafe_allow_html=True)
 
 st.markdown('<div class="titulo">PREDICTOR MUNDIAL 2026</div>', unsafe_allow_html=True)
-st.markdown('<div class="subtitulo">Forma reciente · Ranking FIFA · Ratings · Clima · Monte Carlo 100K</div>', unsafe_allow_html=True)
+st.markdown('<div class="subtitulo">Forma reciente · Ranking FIFA · xG · Ratings · Clima · Monte Carlo 100K</div>', unsafe_allow_html=True)
 
 equipos = get_equipos()
 opciones_equipo = ["— Selecciona un equipo —"] + equipos
@@ -259,10 +239,10 @@ if st.session_state.ciudad_sel:
             if posicion != pos_actual:
                 pos_actual = posicion
                 st.markdown(f"""
-                <div class="pos-header">
-                    <div class="pos-dot" style="background:{col['dot']};"></div>
-                    <span class="pos-label" style="color:{col['label']};">{posicion}s</span>
-                    <div class="pos-line" style="background:{col['line']};"></div>
+                <div style="display:flex;align-items:center;gap:8px;margin-top:14px;margin-bottom:6px;">
+                    <div style="width:7px;height:7px;border-radius:50%;background:{col['dot']};flex-shrink:0;"></div>
+                    <span style="font-size:11px;font-weight:700;color:{col['label']};letter-spacing:0.12em;text-transform:uppercase;">{posicion}s</span>
+                    <div style="flex:1;height:0.5px;background:{col['line']};"></div>
                 </div>
                 """, unsafe_allow_html=True)
             checked = st.checkbox(f"{nombre}", key=f"{key_prefix}_{nombre}", help=f"Rating: {rating}")
@@ -304,6 +284,13 @@ if st.session_state.ciudad_sel:
             st.markdown(f"""
             <div style="background:#0d1f3c;border:1px solid #1e40af;border-radius:8px;padding:10px 14px;margin-bottom:1rem;font-size:13px;color:#93c5fd;">
                 {c['ciudad']} · {hora_p} · {c['temperatura']}°C · Humedad {c['humedad']}% · {c['descripcion']} · Factor clima: {pred['factor_clima']}
+            </div>
+            """, unsafe_allow_html=True)
+
+        if pred.get("xg_local") and pred.get("xg_visitante"):
+            st.markdown(f"""
+            <div style="background:#0d2818;border:1px solid #166534;border-radius:8px;padding:10px 14px;margin-bottom:1rem;font-size:13px;color:#86efac;">
+                xG {st.session_state.local_sel}: {pred['xg_local']} · xG {st.session_state.visitante_sel}: {pred['xg_visitante']}
             </div>
             """, unsafe_allow_html=True)
 
