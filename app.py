@@ -1,6 +1,6 @@
 import streamlit as st
 import sqlite3
-from datetime import date, time
+from datetime import date, time, datetime, timezone, timedelta
 from modelo import predecir_partido, monte_carlo, obtener_rating_once
 
 BANDERAS = {
@@ -19,26 +19,27 @@ BANDERAS = {
     "Curazao": "cw", "Canadá": "ca", "Australia": "au", "Nueva Zelanda": "nz",
 }
 
+# UTC offset de cada sede y Colombia (UTC-5)
 SEDES = {
     "— Estados Unidos —": None,
-    "New York / New Jersey": "New York",
-    "Los Angeles": "Los Angeles",
-    "Dallas": "Dallas",
-    "San Francisco": "San Francisco",
-    "Miami": "Miami",
-    "Seattle": "Seattle",
-    "Boston": "Boston",
-    "Kansas City": "Kansas City",
-    "Philadelphia": "Philadelphia",
-    "Atlanta": "Atlanta",
-    "Houston": "Houston",
+    "New York / New Jersey": {"ciudad": "New York", "utc": -4},
+    "Los Angeles": {"ciudad": "Los Angeles", "utc": -7},
+    "Dallas": {"ciudad": "Dallas", "utc": -5},
+    "San Francisco": {"ciudad": "San Francisco", "utc": -7},
+    "Miami": {"ciudad": "Miami", "utc": -4},
+    "Seattle": {"ciudad": "Seattle", "utc": -7},
+    "Boston": {"ciudad": "Boston", "utc": -4},
+    "Kansas City": {"ciudad": "Kansas City", "utc": -5},
+    "Philadelphia": {"ciudad": "Philadelphia", "utc": -4},
+    "Atlanta": {"ciudad": "Atlanta", "utc": -4},
+    "Houston": {"ciudad": "Houston", "utc": -5},
     "— México —": None,
-    "Ciudad de México": "Mexico City",
-    "Guadalajara": "Guadalajara",
-    "Monterrey": "Monterrey",
+    "Ciudad de México": {"ciudad": "Mexico City", "utc": -6},
+    "Guadalajara": {"ciudad": "Guadalajara", "utc": -6},
+    "Monterrey": {"ciudad": "Monterrey", "utc": -6},
     "— Canadá —": None,
-    "Toronto": "Toronto",
-    "Vancouver": "Vancouver",
+    "Toronto": {"ciudad": "Toronto", "utc": -4},
+    "Vancouver": {"ciudad": "Vancouver", "utc": -7},
 }
 
 COLORES_POS = {
@@ -78,6 +79,13 @@ def get_jugadores(equipo):
     jugadores = cursor.fetchall()
     conn.close()
     return jugadores
+
+def convertir_hora(fecha, hora_col, utc_sede):
+    colombia_utc = -5
+    diferencia = utc_sede - colombia_utc
+    dt_col = datetime.combine(fecha, hora_col)
+    dt_sede = dt_col + timedelta(hours=diferencia)
+    return dt_sede.strftime("%Y-%m-%d %H:%M"), dt_sede.strftime("%H:%M")
 
 st.set_page_config(
     page_title="Predictor Mundial 2026",
@@ -189,13 +197,20 @@ with col3:
     sede_opciones = list(SEDES.keys())
     sede_sel = st.selectbox("Ciudad sede", sede_opciones,
         format_func=lambda x: x if SEDES[x] is not None else f"── {x} ──")
-    ciudad = SEDES.get(sede_sel)
+    sede_info = SEDES.get(sede_sel)
 with col4:
-    fecha = st.date_input("Fecha del partido")
+    fecha = st.date_input("Fecha del partido (hora Colombia)")
 with col5:
-    hora = st.time_input("Hora del partido", value=time(20, 0))
+    hora = st.time_input("Hora del partido (hora Colombia)", value=time(20, 0))
 
-fecha_hora = f"{fecha} {hora.strftime('%H:%M')}"
+if sede_info:
+    fecha_hora_sede, hora_sede = convertir_hora(fecha, hora, sede_info["utc"])
+    st.caption(f"Hora en {sede_sel}: {hora_sede} · Hora Colombia: {hora.strftime('%H:%M')}")
+    ciudad = sede_info["ciudad"]
+    fecha_hora = fecha_hora_sede
+else:
+    fecha_hora = f"{fecha} {hora.strftime('%H:%M')}"
+    ciudad = None
 
 st.markdown("<br>", unsafe_allow_html=True)
 predecir = st.button("PREDECIR PARTIDO", type="primary", use_container_width=True)
@@ -205,7 +220,7 @@ if predecir:
         st.error("Selecciona ambos equipos.")
     elif local == visitante:
         st.error("Selecciona equipos diferentes.")
-    elif SEDES.get(sede_sel) is None:
+    elif sede_info is None:
         st.error("Selecciona una ciudad sede válida.")
     else:
         with st.spinner("Simulando 100.000 partidos..."):
