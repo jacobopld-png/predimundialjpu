@@ -22,67 +22,67 @@ BANDERAS = {
 ESTADIOS = {
     "New York": {
         "nombre": "MetLife Stadium",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/MetLife_Stadium_-_aerial.jpg/640px-MetLife_Stadium_-_aerial.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/4/44/MetLife_Stadium_-_aerial.jpg"
     },
     "Los Angeles": {
         "nombre": "SoFi Stadium",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/SoFi_Stadium_-_aerial_view_%282020%29.jpg/640px-SoFi_Stadium_-_aerial_view_%282020%29.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/6/6b/SoFi_Stadium_-_aerial_view_%282020%29.jpg"
     },
     "Dallas": {
         "nombre": "AT&T Stadium",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/AT%26T_Stadium_-_aerial_%282022%29.jpg/640px-AT%26T_Stadium_-_aerial_%282022%29.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/7/7a/AT%26T_Stadium_Cowboys_v_Giants_2014.jpg"
     },
     "San Francisco": {
         "nombre": "Levi's Stadium",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Levi%27s_Stadium_aerial_view.jpg/640px-Levi%27s_Stadium_aerial_view.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Levi%27s_Stadium.jpg"
     },
     "Miami": {
         "nombre": "Hard Rock Stadium",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Hard_Rock_Stadium_aerial_%282016%29.jpg/640px-Hard_Rock_Stadium_aerial_%282016%29.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/2/23/Hard_Rock_Stadium_aerial_%282016%29.jpg"
     },
     "Seattle": {
         "nombre": "Lumen Field",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Lumen_Field_2021.jpg/640px-Lumen_Field_2021.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Lumen_Field_2019.jpg"
     },
     "Boston": {
         "nombre": "Gillette Stadium",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Gillette_Stadium_aerial_2019.jpg/640px-Gillette_Stadium_aerial_2019.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Gillette_Stadium_aerial_2019.jpg"
     },
     "Kansas City": {
         "nombre": "Arrowhead Stadium",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Arrowhead_Stadium_aerial_%282021%29.jpg/640px-Arrowhead_Stadium_aerial_%282021%29.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Arrowhead_Stadium_2012.jpg"
     },
     "Philadelphia": {
         "nombre": "Lincoln Financial Field",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Lincoln_Financial_Field_aerial_%282022%29.jpg/640px-Lincoln_Financial_Field_aerial_%282022%29.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Lincoln_Financial_Field.jpg"
     },
     "Atlanta": {
         "nombre": "Mercedes-Benz Stadium",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Mercedes-Benz_Stadium_aerial_%282017%29.jpg/640px-Mercedes-Benz_Stadium_aerial_%282017%29.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/9/93/Mercedes-Benz_Stadium_aerial_%282017%29.jpg"
     },
     "Houston": {
         "nombre": "NRG Stadium",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/NRG_Stadium_aerial_%282017%29.jpg/640px-NRG_Stadium_aerial_%282017%29.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/b/b5/NRG_Stadium_Houston.jpg"
     },
     "Mexico City": {
         "nombre": "Estadio Azteca",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/thirty/Estadio_Azteca_aerial.jpg/640px-Estadio_Azteca_aerial.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Azteca_Stadium.jpg"
     },
     "Guadalajara": {
         "nombre": "Estadio Akron",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Estadio_Akron_2018.jpg/640px-Estadio_Akron_2018.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Estadio_Akron_2018.jpg"
     },
     "Monterrey": {
         "nombre": "Estadio BBVA",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Estadio_BBVA_Bancomer.jpg/640px-Estadio_BBVA_Bancomer.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Estadio_BBVA_Bancomer.jpg"
     },
     "Toronto": {
         "nombre": "BMO Field",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/BMO_Field_2016.jpg/640px-BMO_Field_2016.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/4/4e/BMO_Field_2016.jpg"
     },
     "Vancouver": {
         "nombre": "BC Place",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/BC_Place_aerial_%282011%29.jpg/640px-BC_Place_aerial_%282011%29.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/1/1e/BC_Place_aerial_%282011%29.jpg"
     },
 }
 
