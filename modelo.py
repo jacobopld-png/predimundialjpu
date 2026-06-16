@@ -5,6 +5,15 @@ from config import RANKING_FIFA
 from partidos import ES_A_EN, calcular_forma
 from clima import obtener_clima_pronostico, factor_clima
 
+LIGA_FACTOR = {
+    "Champions":   1.5,
+    "Europa_Top":  1.2,
+    "Europa_Mid":  1.0,
+    "Europa_Low":  0.8,
+    "America":     0.85,
+    "Asia_Africa": 0.65,
+}
+
 def obtener_rating_once(equipo_es, titulares=None):
     conn = sqlite3.connect("mundial2026.db")
     cursor = conn.cursor()
@@ -18,8 +27,8 @@ def obtener_rating_once(equipo_es, titulares=None):
             row = cursor.fetchone()
             if row:
                 ratings.append(row[0])
-        conn.close()
         if ratings:
+            conn.close()
             return round(sum(ratings) / len(ratings), 1)
     cursor.execute('''
         SELECT AVG(rating) FROM jugadores WHERE equipo = ?
@@ -27,6 +36,33 @@ def obtener_rating_once(equipo_es, titulares=None):
     resultado = cursor.fetchone()[0]
     conn.close()
     return round(resultado, 1) if resultado else 75.0
+
+def obtener_factor_liga(equipo_es, titulares=None):
+    conn = sqlite3.connect("mundial2026.db")
+    cursor = conn.cursor()
+    if titulares:
+        factores = []
+        for jugador in titulares:
+            cursor.execute('''
+                SELECT liga FROM jugadores
+                WHERE equipo = ? AND nombre = ?
+            ''', (equipo_es, jugador))
+            row = cursor.fetchone()
+            if row:
+                factores.append(LIGA_FACTOR.get(row[0], 1.0))
+        if factores:
+            conn.close()
+            return round(sum(factores) / len(factores), 3)
+        conn.close()
+        return 1.0
+    cursor.execute('''
+        SELECT liga FROM jugadores WHERE equipo = ?
+    ''', (equipo_es,))
+    ligas = [row[0] for row in cursor.fetchall()]
+    conn.close()
+    if not ligas:
+        return 1.0
+    return round(sum(LIGA_FACTOR.get(l, 1.0) for l in ligas) / len(ligas), 3)
 
 def peso_rival(rival):
     ranking = RANKING_FIFA.get(rival, 150)
@@ -59,12 +95,13 @@ def calcular_lambda(equipo_es, titulares=None):
     conn.close()
 
     ranking = RANKING_FIFA.get(equipo_es, 40)
-    ranking_factor = (50 - ranking) / 50
+    ranking_factor = max(0, (80 - ranking) / 80)
     rating = obtener_rating_once(equipo_es, titulares)
-    rating_factor = (rating - 65) / 30
+    rating_factor = (rating - 65) / 25
+    liga_factor = obtener_factor_liga(equipo_es, titulares)
 
     if not partidos:
-        return max(0.3, ranking_factor * 2.5), 1.2
+        return max(0.3, ranking_factor * 3.0 * liga_factor), 1.2
 
     goles_favor_pond = 0
     goles_contra_pond = 0
@@ -87,10 +124,10 @@ def calcular_lambda(equipo_es, titulares=None):
     goles_por_partido = goles_favor_pond / peso_total
     goles_contra_por_partido = goles_contra_pond / peso_total
 
-    lambda_ataque = (goles_por_partido * 0.25) + (ranking_factor * 2.0 * 0.5) + (rating_factor * 1.5 * 0.25)
-    lambda_defensa = goles_contra_por_partido * (1 - rating_factor * 0.2)
+    lambda_ataque = ((goles_por_partido * 0.15) + (ranking_factor * 3.0 * 0.55) + (rating_factor * 1.5 * 0.3)) * liga_factor
+    lambda_defensa = goles_contra_por_partido * (1 - rating_factor * 0.25) * (1 / liga_factor)
 
-    return max(0.3, lambda_ataque), max(0.3, lambda_defensa)
+    return max(0.3, lambda_ataque), max(0.2, lambda_defensa)
 
 def monte_carlo(local_es, visitante_es, ciudad=None, fecha_hora=None, titulares_local=None, titulares_visit=None, iteraciones=100000):
     lambda_local_atq, lambda_local_def = calcular_lambda(local_es, titulares_local)
@@ -163,6 +200,9 @@ def predecir_partido(local_es, visitante_es, ciudad=None, fecha_hora=None, titul
         if clima_info:
             factor_c = factor_clima(clima_info)
 
+    liga_local = obtener_factor_liga(local_es, titulares_local)
+    liga_visitante = obtener_factor_liga(visitante_es, titulares_visit)
+
     return {
         "local": local_es,
         "visitante": visitante_es,
@@ -178,6 +218,8 @@ def predecir_partido(local_es, visitante_es, ciudad=None, fecha_hora=None, titul
         "factor_clima": factor_c,
         "rating_local": obtener_rating_once(local_es, titulares_local),
         "rating_visitante": obtener_rating_once(visitante_es, titulares_visit),
+        "liga_local": liga_local,
+        "liga_visitante": liga_visitante,
         "lambda_local": mc["lambda_local"],
         "lambda_visitante": mc["lambda_visitante"],
     }
@@ -203,6 +245,9 @@ if __name__ == "__main__":
     pred = predecir_partido(local, visitante, ciudad, fecha_hora, titulares_local, titulares_visit)
 
     print(f"\nRating: {local} {pred['rating_local']} | {visitante} {pred['rating_visitante']}")
+    print(f"Factor liga: {local} {pred['liga_local']} | {visitante} {pred['liga_visitante']}")
+    print(f"Lambda: {local} {pred['lambda_local']} | {visitante} {pred['lambda_visitante']}")
+
     if pred["clima"]:
         c = pred["clima"]
         print(f"Clima: {c['ciudad']} {c['temperatura']}°C, {c['humedad']}% humedad")

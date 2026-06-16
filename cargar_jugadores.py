@@ -5,33 +5,34 @@ def cargar_jugadores_csv():
     conn = sqlite3.connect("mundial2026.db")
     cursor = conn.cursor()
 
+    cursor.execute("DROP TABLE IF EXISTS jugadores")
     cursor.execute('''
-        CREATE TABLE IF NOT EXISTS jugadores (
+        CREATE TABLE jugadores (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             equipo TEXT,
             nombre TEXT,
             posicion TEXT,
             rating INTEGER,
+            liga TEXT,
             UNIQUE(equipo, nombre)
         )
     ''')
 
-    cursor.execute("DELETE FROM jugadores")
-
     guardados = 0
-    with open("mundial2026_jugadores.csv", "r", encoding="utf-8") as f:
+    with open("mundial2026_jugadores_v3_6cat.csv", "r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
             try:
                 cursor.execute('''
-                    INSERT OR IGNORE INTO jugadores
-                    (equipo, nombre, posicion, rating)
-                    VALUES (?, ?, ?, ?)
+                    INSERT INTO jugadores
+                    (equipo, nombre, posicion, rating, liga)
+                    VALUES (?, ?, ?, ?, ?)
                 ''', (
                     row["equipo"].strip(),
                     row["nombre"].strip(),
                     row["posicion"].strip(),
-                    int(row["rating"])
+                    int(row["rating"]),
+                    row["liga"].strip(),
                 ))
                 guardados += 1
             except Exception as e:
@@ -39,7 +40,7 @@ def cargar_jugadores_csv():
 
     conn.commit()
     conn.close()
-    print(f"{guardados} jugadores cargados.")
+    print(f"{guardados} jugadores cargados con 6 categorías de liga.")
 
 if __name__ == "__main__":
     cargar_jugadores_csv()
