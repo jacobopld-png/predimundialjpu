@@ -1,6 +1,6 @@
 import streamlit as st
 import sqlite3
-from datetime import date, time, datetime, timedelta
+from datetime import datetime, timedelta
 from modelo import predecir_partido, monte_carlo, obtener_rating_once
 
 BANDERAS = {
@@ -20,70 +20,22 @@ BANDERAS = {
 }
 
 ESTADIOS = {
-    "New York": {
-        "nombre": "MetLife Stadium",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/4/44/MetLife_Stadium_-_aerial.jpg"
-    },
-    "Los Angeles": {
-        "nombre": "SoFi Stadium",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/6/6b/SoFi_Stadium_-_aerial_view_%282020%29.jpg"
-    },
-    "Dallas": {
-        "nombre": "AT&T Stadium",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/7/7a/AT%26T_Stadium_Cowboys_v_Giants_2014.jpg"
-    },
-    "San Francisco": {
-        "nombre": "Levi's Stadium",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Levi%27s_Stadium.jpg"
-    },
-    "Miami": {
-        "nombre": "Hard Rock Stadium",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/2/23/Hard_Rock_Stadium_aerial_%282016%29.jpg"
-    },
-    "Seattle": {
-        "nombre": "Lumen Field",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Lumen_Field_2019.jpg"
-    },
-    "Boston": {
-        "nombre": "Gillette Stadium",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Gillette_Stadium_aerial_2019.jpg"
-    },
-    "Kansas City": {
-        "nombre": "Arrowhead Stadium",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Arrowhead_Stadium_2012.jpg"
-    },
-    "Philadelphia": {
-        "nombre": "Lincoln Financial Field",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Lincoln_Financial_Field.jpg"
-    },
-    "Atlanta": {
-        "nombre": "Mercedes-Benz Stadium",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/9/93/Mercedes-Benz_Stadium_aerial_%282017%29.jpg"
-    },
-    "Houston": {
-        "nombre": "NRG Stadium",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/b/b5/NRG_Stadium_Houston.jpg"
-    },
-    "Mexico City": {
-        "nombre": "Estadio Azteca",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Azteca_Stadium.jpg"
-    },
-    "Guadalajara": {
-        "nombre": "Estadio Akron",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Estadio_Akron_2018.jpg"
-    },
-    "Monterrey": {
-        "nombre": "Estadio BBVA",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Estadio_BBVA_Bancomer.jpg"
-    },
-    "Toronto": {
-        "nombre": "BMO Field",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/4/4e/BMO_Field_2016.jpg"
-    },
-    "Vancouver": {
-        "nombre": "BC Place",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/1/1e/BC_Place_aerial_%282011%29.jpg"
-    },
+    "New York": {"nombre": "MetLife Stadium", "img": "estadios/new_york.jpg"},
+    "Los Angeles": {"nombre": "SoFi Stadium", "img": "estadios/los_angeles.jpg"},
+    "Dallas": {"nombre": "AT&T Stadium", "img": "estadios/dallas.jpg"},
+    "San Francisco": {"nombre": "Levi's Stadium", "img": "estadios/san_francisco.jpg"},
+    "Miami": {"nombre": "Hard Rock Stadium", "img": "estadios/miami.jpg"},
+    "Seattle": {"nombre": "Lumen Field", "img": "estadios/seattle.jpg"},
+    "Boston": {"nombre": "Gillette Stadium", "img": "estadios/boston.jpg"},
+    "Kansas City": {"nombre": "Arrowhead Stadium", "img": "estadios/kansas_city.jpg"},
+    "Philadelphia": {"nombre": "Lincoln Financial Field", "img": "estadios/philadelphia.jpg"},
+    "Atlanta": {"nombre": "Mercedes-Benz Stadium", "img": "estadios/atlanta.jpg"},
+    "Houston": {"nombre": "NRG Stadium", "img": "estadios/houston.jpg"},
+    "Mexico City": {"nombre": "Estadio Azteca", "img": "estadios/mexico_city.jpg"},
+    "Guadalajara": {"nombre": "Estadio Akron", "img": "estadios/guadalajara.jpg"},
+    "Monterrey": {"nombre": "Estadio BBVA", "img": "estadios/monterrey.jpg"},
+    "Toronto": {"nombre": "BMO Field", "img": "estadios/toronto.jpg"},
+    "Vancouver": {"nombre": "BC Place", "img": "estadios/vancouver.jpg"},
 }
 
 SEDES_UTC = {
@@ -179,10 +131,10 @@ body, .stApp { background-color: #1e2a4a !important; }
     background: #162040; border: 0.5px solid #2d3f6b;
     border-radius: 8px; padding: 12px 16px; margin-bottom: 8px;
 }
-.partido-fecha { font-size: 12px; color: #7f9ab5; letter-spacing: 0.06em; margin-bottom: 4px; }
+.partido-fecha { font-size: 12px; color: #7f9ab5; margin-bottom: 4px; }
 .partido-equipos { font-size: 15px; color: #ffffff; font-weight: 600; margin: 2px 0; }
 .partido-ciudad { font-size: 12px; color: #c9a84c; margin-top: 2px; }
-.estadio-nombre { font-size: 12px; color: #7f9ab5; margin-top: 4px; }
+.estadio-nombre { font-size: 12px; color: #7f9ab5; margin-top: 2px; }
 .marcador-box {
     background: #162040; border: 0.5px solid #2d3f6b;
     border-radius: 8px; padding: 1rem; text-align: center;
@@ -213,16 +165,9 @@ st.markdown('<div class="subtitulo">Forma reciente · Ranking FIFA · Ratings ·
 equipos = get_equipos()
 opciones_equipo = ["— Selecciona un equipo —"] + equipos
 
-if "local_sel" not in st.session_state:
-    st.session_state.local_sel = None
-if "visitante_sel" not in st.session_state:
-    st.session_state.visitante_sel = None
-if "ciudad_sel" not in st.session_state:
-    st.session_state.ciudad_sel = None
-if "fecha_sel" not in st.session_state:
-    st.session_state.fecha_sel = None
-if "hora_sel" not in st.session_state:
-    st.session_state.hora_sel = None
+for key in ["local_sel", "visitante_sel", "ciudad_sel", "fecha_sel", "hora_sel"]:
+    if key not in st.session_state:
+        st.session_state[key] = None
 
 st.markdown('<div class="panel-label">Selecciona un equipo para ver sus partidos</div>', unsafe_allow_html=True)
 equipo_buscar = st.selectbox("", opciones_equipo, key="buscar_eq", label_visibility="collapsed")
@@ -241,7 +186,6 @@ if equipo_buscar != "— Selecciona un equipo —":
             fecha_display = fecha_dt.strftime("%d %b %Y")
             _, hora_sede = convertir_hora(fecha, hora_col, ciudad)
             estadio = ESTADIOS.get(ciudad, {})
-            estadio_nombre = estadio.get("nombre", ciudad)
 
             col_info, col_btn = st.columns([4, 1])
             with col_info:
@@ -250,7 +194,7 @@ if equipo_buscar != "— Selecciona un equipo —":
                     <div class="partido-fecha">{fecha_display} · {hora_col} Colombia · {hora_sede} hora local</div>
                     <div class="partido-equipos">{local} vs {visitante}</div>
                     <div class="partido-ciudad">{ciudad}</div>
-                    <div class="estadio-nombre">{estadio_nombre}</div>
+                    <div class="estadio-nombre">{estadio.get('nombre', '')}</div>
                 </div>
                 """, unsafe_allow_html=True)
             with col_btn:
