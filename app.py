@@ -1,6 +1,6 @@
 import streamlit as st
 import sqlite3
-from datetime import date, time, datetime, timezone, timedelta
+from datetime import date, time, datetime, timedelta
 from modelo import predecir_partido, monte_carlo, obtener_rating_once
 
 BANDERAS = {
@@ -19,27 +19,11 @@ BANDERAS = {
     "Curazao": "cw", "Canadá": "ca", "Australia": "au", "Nueva Zelanda": "nz",
 }
 
-# UTC offset de cada sede y Colombia (UTC-5)
-SEDES = {
-    "— Estados Unidos —": None,
-    "New York / New Jersey": {"ciudad": "New York", "utc": -4},
-    "Los Angeles": {"ciudad": "Los Angeles", "utc": -7},
-    "Dallas": {"ciudad": "Dallas", "utc": -5},
-    "San Francisco": {"ciudad": "San Francisco", "utc": -7},
-    "Miami": {"ciudad": "Miami", "utc": -4},
-    "Seattle": {"ciudad": "Seattle", "utc": -7},
-    "Boston": {"ciudad": "Boston", "utc": -4},
-    "Kansas City": {"ciudad": "Kansas City", "utc": -5},
-    "Philadelphia": {"ciudad": "Philadelphia", "utc": -4},
-    "Atlanta": {"ciudad": "Atlanta", "utc": -4},
-    "Houston": {"ciudad": "Houston", "utc": -5},
-    "— México —": None,
-    "Ciudad de México": {"ciudad": "Mexico City", "utc": -6},
-    "Guadalajara": {"ciudad": "Guadalajara", "utc": -6},
-    "Monterrey": {"ciudad": "Monterrey", "utc": -6},
-    "— Canadá —": None,
-    "Toronto": {"ciudad": "Toronto", "utc": -4},
-    "Vancouver": {"ciudad": "Vancouver", "utc": -7},
+SEDES_UTC = {
+    "New York": -4, "Los Angeles": -7, "Dallas": -5, "San Francisco": -7,
+    "Miami": -4, "Seattle": -7, "Boston": -4, "Kansas City": -5,
+    "Philadelphia": -4, "Atlanta": -4, "Houston": -5, "Mexico City": -6,
+    "Guadalajara": -6, "Monterrey": -6, "Toronto": -4, "Vancouver": -7,
 }
 
 COLORES_POS = {
@@ -80,12 +64,35 @@ def get_jugadores(equipo):
     conn.close()
     return jugadores
 
-def convertir_hora(fecha, hora_col, utc_sede):
+def get_partidos_equipo(equipo):
+    conn = sqlite3.connect("mundial2026.db")
+    cursor = conn.cursor()
+    cursor.execute('''
+        SELECT fecha, hora_colombia, local, visitante, ciudad
+        FROM calendario
+        WHERE local = ? OR visitante = ?
+        ORDER BY fecha, hora_colombia
+    ''', (equipo, equipo))
+    partidos = cursor.fetchall()
+    conn.close()
+    return partidos
+
+def convertir_hora(fecha_str, hora_str, ciudad):
+    utc_sede = SEDES_UTC.get(ciudad, -5)
     colombia_utc = -5
     diferencia = utc_sede - colombia_utc
-    dt_col = datetime.combine(fecha, hora_col)
-    dt_sede = dt_col + timedelta(hours=diferencia)
+    dt = datetime.strptime(f"{fecha_str} {hora_str}", "%Y-%m-%d %H:%M")
+    dt_sede = dt + timedelta(hours=diferencia)
     return dt_sede.strftime("%Y-%m-%d %H:%M"), dt_sede.strftime("%H:%M")
+
+def ciudad_display(ciudad):
+    mapeo = {
+        "New York": "New York / New Jersey",
+        "Mexico City": "Ciudad de México",
+        "San Francisco": "San Francisco",
+        "Philadelphia": "Philadelphia",
+    }
+    return mapeo.get(ciudad, ciudad)
 
 st.set_page_config(
     page_title="Predictor Mundial 2026",
@@ -111,6 +118,15 @@ body, .stApp { background-color: #080808 !important; }
     letter-spacing: 0.15em; text-transform: uppercase;
     border-bottom: 0.5px solid #1f1f1f; padding-bottom: 8px; margin-bottom: 1rem;
 }
+.partido-card {
+    background: #0f0f0f; border: 0.5px solid #1f1f1f;
+    border-radius: 8px; padding: 10px 14px; margin-bottom: 8px;
+    cursor: pointer;
+}
+.partido-card:hover { border-color: #c9a84c44; }
+.partido-fecha { font-size: 10px; color: #555; letter-spacing: 0.08em; }
+.partido-equipos { font-size: 13px; color: #fff; font-weight: 500; margin: 2px 0; }
+.partido-ciudad { font-size: 10px; color: #c9a84c; }
 .marcador-box {
     background: #0f0f0f; border: 0.5px solid #1f1f1f;
     border-radius: 8px; padding: 1rem; text-align: center;
@@ -140,9 +156,72 @@ st.markdown('<div class="subtitulo">Forma reciente · Ranking FIFA · Ratings ·
 equipos = get_equipos()
 opciones_equipo = ["— Selecciona un equipo —"] + equipos
 
-def render_equipo(key_prefix, label):
+if "partido_sel" not in st.session_state:
+    st.session_state.partido_sel = None
+if "local_sel" not in st.session_state:
+    st.session_state.local_sel = "— Selecciona un equipo —"
+if "visitante_sel" not in st.session_state:
+    st.session_state.visitante_sel = "— Selecciona un equipo —"
+if "ciudad_sel" not in st.session_state:
+    st.session_state.ciudad_sel = None
+if "fecha_sel" not in st.session_state:
+    st.session_state.fecha_sel = None
+if "hora_sel" not in st.session_state:
+    st.session_state.hora_sel = None
+
+st.markdown('<div class="panel-label">Selecciona un equipo para ver sus partidos</div>', unsafe_allow_html=True)
+equipo_buscar = st.selectbox("", opciones_equipo, key="buscar_eq", label_visibility="collapsed")
+
+if equipo_buscar != "— Selecciona un equipo —":
+    try:
+        st.image(get_bandera_url(equipo_buscar), width=48)
+    except:
+        pass
+    partidos = get_partidos_equipo(equipo_buscar)
+    if partidos:
+        st.markdown('<div class="panel-label" style="margin-top:1rem;">Próximos partidos</div>', unsafe_allow_html=True)
+        for p in partidos:
+            fecha, hora_col, local, visitante, ciudad = p
+            fecha_dt = datetime.strptime(fecha, "%Y-%m-%d")
+            fecha_display = fecha_dt.strftime("%d %b %Y")
+            _, hora_sede = convertir_hora(fecha, hora_col, ciudad)
+            ciudad_disp = ciudad_display(ciudad)
+
+            col_info, col_btn = st.columns([4, 1])
+            with col_info:
+                st.markdown(f"""
+                <div class="partido-card">
+                    <div class="partido-fecha">{fecha_display} · {hora_col} Colombia · {hora_sede} hora local</div>
+                    <div class="partido-equipos">{local} vs {visitante}</div>
+                    <div class="partido-ciudad">{ciudad_disp}</div>
+                </div>
+                """, unsafe_allow_html=True)
+            with col_btn:
+                if st.button("Seleccionar", key=f"btn_{fecha}_{local}_{visitante}"):
+                    st.session_state.local_sel = local
+                    st.session_state.visitante_sel = visitante
+                    st.session_state.ciudad_sel = ciudad
+                    st.session_state.fecha_sel = fecha
+                    st.session_state.hora_sel = hora_col
+                    st.rerun()
+
+st.divider()
+
+if st.session_state.ciudad_sel:
+    fecha_hora_sede, hora_sede = convertir_hora(
+        st.session_state.fecha_sel,
+        st.session_state.hora_sel,
+        st.session_state.ciudad_sel
+    )
+    fecha_dt = datetime.strptime(st.session_state.fecha_sel, "%Y-%m-%d")
+    st.info(f"Partido seleccionado: **{st.session_state.local_sel}** vs **{st.session_state.visitante_sel}** · {fecha_dt.strftime('%d %b %Y')} · {st.session_state.hora_sel} Colombia · {hora_sede} hora local · {ciudad_display(st.session_state.ciudad_sel)}")
+
+col1, col2 = st.columns(2, gap="large")
+
+def render_equipo(key_prefix, label, equipo_default):
     st.markdown(f'<div class="panel-label">{label}</div>', unsafe_allow_html=True)
-    equipo = st.selectbox("", opciones_equipo, key=f"{key_prefix}_eq", label_visibility="collapsed")
+    idx = opciones_equipo.index(equipo_default) if equipo_default in opciones_equipo else 0
+    equipo = st.selectbox("", opciones_equipo, index=idx, key=f"{key_prefix}_eq", label_visibility="collapsed")
 
     if equipo == "— Selecciona un equipo —":
         st.caption("Selecciona un equipo para ver los jugadores.")
@@ -184,35 +263,13 @@ def render_equipo(key_prefix, label):
 
     return equipo, titulares
 
-col1, col2 = st.columns(2, gap="large")
 with col1:
-    local, titulares_local = render_equipo("l", "Equipo local")
+    local, titulares_local = render_equipo("l", "Equipo local", st.session_state.local_sel)
 with col2:
-    visitante, titulares_visit = render_equipo("v", "Equipo visitante")
+    visitante, titulares_visit = render_equipo("v", "Equipo visitante", st.session_state.visitante_sel)
 
 st.divider()
 
-col3, col4, col5 = st.columns(3)
-with col3:
-    sede_opciones = list(SEDES.keys())
-    sede_sel = st.selectbox("Ciudad sede", sede_opciones,
-        format_func=lambda x: x if SEDES[x] is not None else f"── {x} ──")
-    sede_info = SEDES.get(sede_sel)
-with col4:
-    fecha = st.date_input("Fecha del partido (hora Colombia)")
-with col5:
-    hora = st.time_input("Hora del partido (hora Colombia)", value=time(20, 0))
-
-if sede_info:
-    fecha_hora_sede, hora_sede = convertir_hora(fecha, hora, sede_info["utc"])
-    st.caption(f"Hora en {sede_sel}: {hora_sede} · Hora Colombia: {hora.strftime('%H:%M')}")
-    ciudad = sede_info["ciudad"]
-    fecha_hora = fecha_hora_sede
-else:
-    fecha_hora = f"{fecha} {hora.strftime('%H:%M')}"
-    ciudad = None
-
-st.markdown("<br>", unsafe_allow_html=True)
 predecir = st.button("PREDECIR PARTIDO", type="primary", use_container_width=True)
 
 if predecir:
@@ -220,14 +277,21 @@ if predecir:
         st.error("Selecciona ambos equipos.")
     elif local == visitante:
         st.error("Selecciona equipos diferentes.")
-    elif sede_info is None:
-        st.error("Selecciona una ciudad sede válida.")
+    elif not st.session_state.ciudad_sel:
+        st.error("Selecciona un partido del calendario.")
     else:
+        fecha_hora_sede, hora_sede = convertir_hora(
+            st.session_state.fecha_sel,
+            st.session_state.hora_sel,
+            st.session_state.ciudad_sel
+        )
+        ciudad = st.session_state.ciudad_sel
+
         with st.spinner("Simulando 100.000 partidos..."):
             tl = titulares_local if len(titulares_local) == 11 else None
             tv = titulares_visit if len(titulares_visit) == 11 else None
-            pred = predecir_partido(local, visitante, ciudad, fecha_hora, tl, tv)
-            mc = monte_carlo(local, visitante, ciudad, fecha_hora, tl, tv)
+            pred = predecir_partido(local, visitante, ciudad, fecha_hora_sede, tl, tv)
+            mc = monte_carlo(local, visitante, ciudad, fecha_hora_sede, tl, tv)
 
         st.divider()
 
