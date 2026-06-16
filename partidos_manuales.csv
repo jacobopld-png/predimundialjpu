@@ -1,0 +1,481 @@
+equipo,rival,goles_favor,goles_contra,fecha,competicion
+Argentina,Venezuela,3,0,2025-09-04,Eliminatorias CONMEBOL
+Argentina,Ecuador,0,1,2025-09-09,Eliminatorias CONMEBOL
+Argentina,Venezuela,1,0,2025-10-10,Amistoso Internacional
+Argentina,Puerto Rico,6,0,2025-10-14,Amistoso Internacional
+Argentina,Angola,2,0,2025-11-14,Amistoso Internacional
+Argentina,Mauritania,2,1,2026-03-27,Amistoso Internacional
+Argentina,Zambia,5,0,2026-03-31,Amistoso Internacional
+Argentina,Honduras,2,0,2026-06-06,Amistoso Internacional
+Argentina,Islandia,3,0,2026-06-09,Amistoso Internacional
+México,Sudáfrica,2,0,2026-06-11,Mundial 2026
+México,Serbia,5,1,null,Amistoso Internacional
+México,Australia,1,0,null,Amistoso Internacional
+México,Ghana,2,0,null,Amistoso Internacional
+México,Bélgica,1,1,null,Amistoso Internacional
+México,Portugal,0,0,null,Amistoso Internacional
+México,Estados Unidos,2,1,null,Copa Oro CONCACAF
+México,Honduras,1,0,null,Copa Oro CONCACAF
+Sudáfrica,México,0,2,2026-06-11,Mundial 2026
+Sudáfrica,Jamaica,1,1,null,Amistoso Internacional
+Sudáfrica,Nicaragua,0,0,null,Amistoso Internacional
+Sudáfrica,Panamá,1,2,null,Amistoso Internacional
+Sudáfrica,Panamá,1,1,null,Amistoso Internacional
+Sudáfrica,Camerún,1,2,null,Copa Africana
+Sudáfrica,Zimbabue,3,2,null,Copa Africana
+Corea del Sur,República Checa,2,1,2026-06-12,Mundial 2026
+Corea del Sur,El Salvador,1,0,null,Amistoso Internacional
+Corea del Sur,Trinidad y Tobago,5,0,null,Amistoso Internacional
+Corea del Sur,Austria,0,1,null,Amistoso Internacional
+Corea del Sur,Costa de Marfil,0,4,null,Amistoso Internacional
+Corea del Sur,Irak,2,0,null,Eliminatorias AFC
+Corea del Sur,Japón,0,1,null,East Asian Championship
+República Checa,Corea del Sur,1,2,2026-06-12,Mundial 2026
+República Checa,Guatemala,3,1,null,Amistoso Internacional
+República Checa,Kosovo,2,1,null,Amistoso Internacional
+República Checa,Dinamarca,2,2,null,Eliminatorias UEFA
+República Checa,Irlanda,2,2,null,Eliminatorias UEFA
+República Checa,Gibraltar,6,0,null,Eliminatorias UEFA
+República Checa,San Marino,1,0,null,Amistoso Internacional
+República Checa,Islas Feroe,1,2,null,Eliminatorias UEFA
+Canadá,Bosnia y Herzegovina,1,1,2026-06-12,Mundial 2026
+Canadá,Islandia,1,1,null,Amistoso Internacional
+Canadá,Uzbekistán,2,0,null,Amistoso Internacional
+Canadá,Túnez,0,0,null,Amistoso Internacional
+Canadá,Islandia,2,2,null,Amistoso Internacional
+Canadá,Guatemala,1,0,null,Amistoso Internacional
+Canadá,Guatemala,1,1,null,Copa Oro CONCACAF
+Canadá,El Salvador,2,0,null,Copa Oro CONCACAF
+Canadá,Curazao,1,1,null,Copa Oro CONCACAF
+Canadá,Honduras,6,0,null,Copa Oro CONCACAF
+Bosnia y Herzegovina,Canadá,1,1,2026-06-12,Mundial 2026
+Bosnia y Herzegovina,Panamá,1,1,null,Amistoso Internacional
+Bosnia y Herzegovina,Macedonia del Norte,0,0,null,Amistoso Internacional
+Bosnia y Herzegovina,Italia,1,1,null,Eliminatorias UEFA
+Bosnia y Herzegovina,Gales,1,1,null,Eliminatorias UEFA
+Bosnia y Herzegovina,Austria,1,1,null,Eliminatorias UEFA
+Bosnia y Herzegovina,Rumanía,3,1,null,Eliminatorias UEFA
+Bosnia y Herzegovina,Chipre,2,2,null,Eliminatorias UEFA
+Bosnia y Herzegovina,Austria,1,2,null,Eliminatorias UEFA
+Bosnia y Herzegovina,San Marino,6,0,null,Eliminatorias UEFA
+Catar,Suiza,1,1,2026-06-12,Mundial 2026
+Catar,El Salvador,0,0,null,Amistoso Internacional
+Catar,Irlanda,0,1,null,Amistoso Internacional
+Catar,Túnez,0,3,null,Amistoso Internacional
+Catar,Siria,1,1,null,Amistoso Internacional
+Catar,Palestina,0,1,null,Amistoso Internacional
+Catar,Zimbabue,1,2,null,Amistoso Internacional
+Catar,Emiratos Árabes Unidos,2,1,null,Eliminatorias AFC
+Catar,Omán,0,0,null,Eliminatorias AFC
+Catar,Rusia,1,4,null,Amistoso Internacional
+Suiza,Catar,1,1,2026-06-12,Mundial 2026
+Suiza,Austria,2,0,null,Amistoso Internacional
+Suiza,Serbia,1,0,null,Amistoso Internacional
+Suiza,Alemania,3,4,2025-03-31,Amistoso Internacional
+Suiza,Noruega,0,0,2025-03-31,Amistoso Internacional
+Suiza,Jordania,4,1,2025-05-31,Amistoso Internacional
+Suiza,Australia,1,1,2025-06-06,Amistoso Internacional
+Suiza,Kosovo,4,0,2025-09-05,Eliminatorias UEFA
+Suiza,Eslovenia,3,0,2025-09-08,Eliminatorias UEFA
+Suiza,Suecia,2,0,2025-10-10,Eliminatorias UEFA
+Suiza,Eslovenia,0,0,2025-10-13,Eliminatorias UEFA
+Suiza,Suecia,4,1,2025-11-15,Eliminatorias UEFA
+Suiza,Kosovo,1,1,2025-11-18,Eliminatorias UEFA
+Brasil,Túnez,1,1,2025-03-25,Amistoso Internacional
+Brasil,Francia,1,2,2025-03-26,Amistoso Internacional
+Brasil,Croacia,3,1,2025-03-31,Amistoso Internacional
+Brasil,Panamá,6,2,2025-05-31,Amistoso Internacional
+Brasil,Egipto,2,1,2025-06-06,Amistoso Internacional
+Brasil,Marruecos,1,1,2026-06-13,Mundial 2026
+Brasil,Chile,3,0,2025-09-04,Eliminatorias CONMEBOL
+Brasil,Bolivia,0,1,2025-09-09,Eliminatorias CONMEBOL
+Brasil,Corea del Sur,5,0,2025-10-10,Amistoso Internacional
+Brasil,Japón,2,3,2025-10-14,Amistoso Internacional
+Brasil,Senegal,2,0,2025-11-15,Amistoso Internacional
+Brasil,Túnez,1,1,2025-11-18,Amistoso Internacional
+Marruecos,Zambia,3,0,2024-12-29,Copa Africana
+Marruecos,Tanzania,1,0,2025-01-04,Copa Africana
+Marruecos,Camerún,2,0,2025-01-09,Copa Africana
+Marruecos,Nigeria,0,0,2025-01-14,Copa Africana
+Marruecos,Senegal,3,0,2025-01-18,Copa Africana
+Marruecos,Ecuador,1,1,2025-03-27,Amistoso Internacional
+Marruecos,Paraguay,2,1,2025-03-31,Amistoso Internacional
+Marruecos,Burundi,5,0,2025-05-26,Amistoso Internacional
+Marruecos,Madagascar,4,0,2025-06-02,Amistoso Internacional
+Marruecos,Noruega,1,1,2025-06-07,Amistoso Internacional
+Marruecos,Brasil,1,1,2026-06-13,Mundial 2026
+Estados Unidos,Uruguay,5,1,2025-03-25,Amistoso Internacional
+Estados Unidos,Bélgica,2,5,2025-03-28,Amistoso Internacional
+Estados Unidos,Portugal,0,2,2025-03-31,Amistoso Internacional
+Estados Unidos,Senegal,3,2,2025-05-31,Amistoso Internacional
+Estados Unidos,Alemania,1,2,2025-06-06,Amistoso Internacional
+Estados Unidos,Paraguay,4,1,2026-06-12,Mundial 2026
+Estados Unidos,México,1,2,2025-08-01,CONCACAF Copa Oro
+Estados Unidos,Corea del Sur,0,2,2025-09-06,Amistoso Internacional
+Estados Unidos,Japón,2,0,2025-09-09,Amistoso Internacional
+Estados Unidos,Ecuador,1,1,2025-10-10,Amistoso Internacional
+Estados Unidos,Australia,2,1,2025-10-14,Amistoso Internacional
+Estados Unidos,Paraguay,2,1,2025-11-15,Amistoso Internacional
+Haití,Honduras,0,0,2025-09-05,CONCACAF Eliminatorias
+Haití,Costa Rica,3,3,2025-09-09,CONCACAF Eliminatorias
+Haití,Nicaragua,3,0,2025-10-09,CONCACAF Eliminatorias
+Haití,Honduras,0,3,2025-10-13,CONCACAF Eliminatorias
+Haití,Costa Rica,1,0,2025-11-13,CONCACAF Eliminatorias
+Haití,Nicaragua,2,0,2025-11-18,CONCACAF Eliminatorias
+Haití,Túnez,0,1,2026-03-28,Amistoso Internacional
+Haití,Islandia,1,1,2026-03-31,Amistoso Internacional
+Haití,Nueva Zelanda,4,0,2026-06-02,Amistoso Internacional
+Haití,Perú,1,2,2026-06-05,Amistoso Internacional
+Haití,Escocia,0,1,2026-06-13,Mundial 2026
+Escocia,Haití,1,0,2026-06-13,Mundial 2026
+Escocia,Dinamarca,0,0,2025-09-05,Eliminatorias UEFA
+Escocia,Bielorrusia,2,0,2025-09-08,Eliminatorias UEFA
+Escocia,Grecia,3,1,2025-10-09,Eliminatorias UEFA
+Escocia,Bielorrusia,2,1,2025-10-12,Eliminatorias UEFA
+Escocia,Grecia,2,3,2025-11-15,Eliminatorias UEFA
+Escocia,Dinamarca,4,2,2025-11-18,Eliminatorias UEFA
+Escocia,Japón,0,1,2025-03-28,Amistoso Internacional
+Escocia,Costa de Marfil,0,1,2025-03-31,Amistoso Internacional
+Escocia,Curazao,4,1,2025-05-30,Amistoso Internacional
+Escocia,Bolivia,4,0,2025-06-06,Amistoso Internacional
+Paraguay,Ecuador,0,0,2025-09-04,Eliminatorias CONMEBOL
+Paraguay,Perú,1,0,2025-09-09,Eliminatorias CONMEBOL
+Paraguay,Japón,2,2,2025-10-10,Amistoso Internacional
+Paraguay,Corea del Sur,0,2,2025-10-14,Amistoso Internacional
+Paraguay,Estados Unidos,1,2,2025-11-15,Amistoso Internacional
+Paraguay,México,2,1,2025-11-18,Amistoso Internacional
+Paraguay,Grecia,1,0,2026-03-27,Amistoso Internacional
+Paraguay,Marruecos,1,2,2026-03-31,Amistoso Internacional
+Paraguay,Nicaragua,4,0,2026-06-05,Amistoso Internacional
+Paraguay,Estados Unidos,1,4,2026-06-12,Mundial 2026
+Australia,Camerún,1,0,2025-03-28,FIFA Series
+Australia,Curazao,5,1,2025-03-31,FIFA Series
+Australia,Nueva Zelanda,1,0,2025-09-06,Amistoso Internacional
+Australia,Nueva Zelanda,3,1,2025-09-09,Amistoso Internacional
+Australia,Canadá,1,0,2025-10-10,Amistoso Internacional
+Australia,Estados Unidos,1,2,2025-10-14,Amistoso Internacional
+Australia,Venezuela,0,1,2025-11-14,Amistoso Internacional
+Australia,Colombia,0,3,2025-11-18,Amistoso Internacional
+Australia,México,0,1,2026-05-30,Amistoso Internacional
+Australia,Suiza,1,1,2026-06-06,Amistoso Internacional
+Australia,Turquía,2,0,2026-06-13,Mundial 2026
+Turquía,Georgia,3,2,2025-09-05,Eliminatorias UEFA
+Turquía,España,0,6,2025-09-07,Eliminatorias UEFA
+Turquía,Bulgaria,6,1,2025-10-11,Eliminatorias UEFA
+Turquía,Georgia,4,1,2025-10-14,Eliminatorias UEFA
+Turquía,Bulgaria,2,0,2025-11-15,Eliminatorias UEFA
+Turquía,España,2,2,2025-11-18,Eliminatorias UEFA
+Turquía,Rumania,1,0,2026-03-27,Eliminatorias UEFA
+Turquía,Kosovo,1,0,2026-03-31,Eliminatorias UEFA
+Turquía,Macedonia del Norte,4,0,2026-06-01,Amistoso Internacional
+Turquía,Venezuela,2,1,2026-06-06,Amistoso Internacional
+Turquía,Australia,0,2,2026-06-13,Mundial 2026
+Alemania,Irlanda del Norte,3,1,2025-09-07,Eliminatorias UEFA
+Alemania,Luxemburgo,4,0,2025-10-10,Eliminatorias UEFA
+Alemania,Irlanda del Norte,1,0,2025-10-13,Eliminatorias UEFA
+Alemania,Luxemburgo,2,0,2025-11-14,Eliminatorias UEFA
+Alemania,Eslovaquia,6,0,2025-11-17,Eliminatorias UEFA
+Alemania,Suiza,4,3,2025-03-31,Amistoso Internacional
+Alemania,Ghana,2,1,2026-03-30,Amistoso Internacional
+Alemania,Finlandia,4,0,2026-05-31,Amistoso Internacional
+Alemania,Estados Unidos,2,1,2026-06-06,Amistoso Internacional
+Alemania,Curazao,7,1,2026-06-14,Mundial 2026
+Curazao,China,0,2,2025-03-28,FIFA Series
+Curazao,Australia,1,5,2025-03-31,FIFA Series
+Curazao,Trinidad y Tobago,0,0,2025-09-05,CONCACAF Eliminatorias
+Curazao,Bermuda,3,2,2025-09-09,CONCACAF Eliminatorias
+Curazao,Jamaica,2,0,2025-10-10,CONCACAF Eliminatorias
+Curazao,Trinidad y Tobago,1,1,2025-10-14,CONCACAF Eliminatorias
+Curazao,Bermuda,7,0,2025-11-13,CONCACAF Eliminatorias
+Curazao,Jamaica,0,0,2025-11-18,CONCACAF Eliminatorias
+Curazao,Escocia,1,4,2025-05-30,Amistoso Internacional
+Curazao,Aruba,4,0,2025-06-06,Amistoso Internacional
+Curazao,Alemania,1,7,2026-06-14,Mundial 2026
+Costa de Marfil,Omán,2,0,2024-11-18,Amistoso Internacional
+Costa de Marfil,Mozambique,1,0,2024-12-24,Copa Africana
+Costa de Marfil,Camerún,1,1,2024-12-28,Copa Africana
+Costa de Marfil,Gabón,3,2,2024-12-31,Copa Africana
+Costa de Marfil,Burkina Faso,3,0,2025-01-06,Copa Africana
+Costa de Marfil,Egipto,2,3,2025-01-10,Copa Africana
+Costa de Marfil,Corea del Sur,4,0,2025-03-28,Amistoso Internacional
+Costa de Marfil,Escocia,1,0,2025-03-31,Amistoso Internacional
+Costa de Marfil,Francia,2,1,2025-06-04,Amistoso Internacional
+Costa de Marfil,Ecuador,1,0,2026-06-14,Mundial 2026
+Ecuador,Paraguay,0,0,2025-09-04,Eliminatorias CONMEBOL
+Ecuador,Argentina,1,0,2025-09-09,Eliminatorias CONMEBOL
+Ecuador,Estados Unidos,1,1,2025-10-10,Amistoso Internacional
+Ecuador,México,1,1,2025-10-14,Amistoso Internacional
+Ecuador,Canadá,0,0,2025-11-13,Amistoso Internacional
+Ecuador,Nueva Zelanda,2,0,2025-11-18,Amistoso Internacional
+Ecuador,Marruecos,1,1,2026-03-27,Amistoso Internacional
+Ecuador,Países Bajos,1,1,2026-03-31,Amistoso Internacional
+Ecuador,Arabia Saudita,2,1,2026-05-30,Amistoso Internacional
+Ecuador,Guatemala,3,0,2026-06-07,Amistoso Internacional
+Ecuador,Costa de Marfil,0,1,2026-06-14,Mundial 2026
+Países Bajos,Polonia,1,1,2025-09-05,Eliminatorias UEFA
+Países Bajos,Lituania,3,2,2025-09-07,Eliminatorias UEFA
+Países Bajos,Malta,4,0,2025-10-09,Eliminatorias UEFA
+Países Bajos,Finlandia,4,0,2025-10-12,Eliminatorias UEFA
+Países Bajos,Polonia,1,1,2025-11-14,Eliminatorias UEFA
+Países Bajos,Lituania,4,0,2025-11-17,Eliminatorias UEFA
+Países Bajos,Noruega,2,1,2026-03-28,Amistoso Internacional
+Países Bajos,Ecuador,1,1,2026-03-31,Amistoso Internacional
+Países Bajos,Argelia,0,1,2026-06-03,Amistoso Internacional
+Países Bajos,Uzbekistán,2,1,2026-06-08,Amistoso Internacional
+Países Bajos,Japón,2,2,2026-06-14,Mundial 2026
+Japón,Bolivia,3,0,2025-11-18,Amistoso Internacional
+Japón,Escocia,1,0,2025-03-28,Amistoso Internacional
+Japón,Inglaterra,1,0,2025-03-31,Amistoso Internacional
+Japón,Islandia,1,0,2025-05-31,Amistoso Internacional
+Japón,México,0,0,2025-09-06,Amistoso Internacional
+Japón,Estados Unidos,0,2,2025-09-09,Amistoso Internacional
+Japón,Paraguay,2,2,2025-10-10,Amistoso Internacional
+Japón,Brasil,3,2,2025-10-14,Amistoso Internacional
+Japón,Ghana,2,0,2025-11-14,Amistoso Internacional
+Japón,Países Bajos,2,2,2026-06-14,Mundial 2026
+Suecia,Kosovo,0,2,2025-09-05,Eliminatorias UEFA
+Suecia,Suiza,0,2,2025-10-10,Eliminatorias UEFA
+Suecia,Kosovo,0,1,2025-10-13,Eliminatorias UEFA
+Suecia,Suiza,1,4,2025-11-15,Eliminatorias UEFA
+Suecia,Eslovenia,1,1,2025-11-18,Eliminatorias UEFA
+Suecia,Ucrania,3,1,2026-03-26,Eliminatorias UEFA
+Suecia,Polonia,3,2,2026-03-31,Eliminatorias UEFA
+Suecia,Noruega,1,3,2026-06-01,Amistoso Internacional
+Suecia,Grecia,2,2,2026-06-04,Amistoso Internacional
+Suecia,Túnez,5,1,2026-06-14,Mundial 2026
+Túnez,Botswana,2,1,2024-11-14,Amistoso Internacional
+Túnez,Uganda,3,1,2024-12-23,Copa Africana
+Túnez,Nigeria,2,3,2024-12-27,Copa Africana
+Túnez,Tanzania,1,1,2024-12-30,Copa Africana
+Túnez,Mali,1,1,2025-01-03,Copa Africana
+Túnez,Haití,1,0,2026-03-28,Amistoso Internacional
+Túnez,Canadá,0,0,2026-03-31,Amistoso Internacional
+Túnez,Austria,0,1,2026-06-01,Amistoso Internacional
+Túnez,Bélgica,0,5,2026-06-06,Amistoso Internacional
+Túnez,Suecia,1,5,2026-06-14,Mundial 2026
+Bélgica,Kazajstán,6,0,2025-09-07,Eliminatorias UEFA
+Bélgica,Macedonia del Norte,0,0,2025-10-10,Eliminatorias UEFA
+Bélgica,Gales,4,2,2025-10-13,Eliminatorias UEFA
+Bélgica,Kazajstán,1,1,2025-11-15,Eliminatorias UEFA
+Bélgica,Liechtenstein,7,0,2025-11-18,Eliminatorias UEFA
+Bélgica,Estados Unidos,5,2,2025-03-28,Amistoso Internacional
+Bélgica,México,1,1,2025-03-31,Amistoso Internacional
+Bélgica,Croacia,2,0,2025-06-02,Amistoso Internacional
+Bélgica,Túnez,5,0,2025-06-06,Amistoso Internacional
+Bélgica,Egipto,1,1,2026-06-15,Mundial 2026
+Egipto,Angola,0,0,2024-12-29,Copa Africana
+Egipto,Benin,3,1,2025-01-05,Copa Africana
+Egipto,Costa de Marfil,3,2,2025-01-10,Copa Africana
+Egipto,Senegal,0,1,2025-01-14,Copa Africana
+Egipto,Nigeria,0,0,2025-01-17,Copa Africana
+Egipto,Arabia Saudita,4,0,2026-03-27,Amistoso Internacional
+Egipto,España,0,0,2026-03-31,Amistoso Internacional
+Egipto,Rusia,1,0,2026-05-28,Amistoso Internacional
+Egipto,Brasil,1,2,2026-06-06,Amistoso Internacional
+Egipto,Bélgica,1,1,2026-06-15,Mundial 2026
+Irán,Tajikistán,2,2,2025-09-06,CAFA Nations Cup
+Irán,Uzbekistán,0,1,2025-09-08,CAFA Nations Cup
+Irán,Rusia,1,2,2025-10-10,Amistoso Internacional
+Irán,Tanzania,2,0,2025-10-14,Amistoso Internacional
+Irán,Cabo Verde,0,0,2025-11-13,Amistoso Internacional
+Irán,Uzbekistán,0,0,2025-11-18,Amistoso Internacional
+Irán,Nigeria,1,2,2026-03-27,Amistoso Internacional
+Irán,Costa Rica,5,0,2026-03-31,Amistoso Internacional
+Irán,Gambia,3,1,2026-05-29,Amistoso Internacional
+Irán,Mali,2,0,2026-06-04,Amistoso Internacional
+Nueva Zelanda,Australia,0,1,2025-09-05,Amistoso Internacional
+Nueva Zelanda,Australia,1,3,2025-09-09,Amistoso Internacional
+Nueva Zelanda,Polonia,0,1,2025-10-09,Amistoso Internacional
+Nueva Zelanda,Noruega,1,1,2025-10-14,Amistoso Internacional
+Nueva Zelanda,Colombia,1,2,2025-11-15,Amistoso Internacional
+Nueva Zelanda,Ecuador,0,2,2025-11-18,Amistoso Internacional
+Nueva Zelanda,Finlandia,0,2,2026-03-27,FIFA Series
+Nueva Zelanda,Chile,4,1,2026-03-30,FIFA Series
+Nueva Zelanda,Haití,0,4,2026-06-02,Amistoso Internacional
+Nueva Zelanda,Inglaterra,0,1,2026-06-06,Amistoso Internacional
+España,Bulgaria,3,0,2025-09-05,Eliminatorias UEFA
+España,Turquía,6,0,2025-09-07,Eliminatorias UEFA
+España,Georgia,2,0,2025-10-11,Eliminatorias UEFA
+España,Bulgaria,4,0,2025-10-14,Eliminatorias UEFA
+España,Georgia,4,0,2025-11-15,Eliminatorias UEFA
+España,Turquía,2,2,2025-11-18,Eliminatorias UEFA
+España,Serbia,3,0,2026-03-27,Amistoso Internacional
+España,Egipto,0,0,2026-03-31,Amistoso Internacional
+España,Irak,1,1,2026-06-04,Amistoso Internacional
+España,Perú,3,1,2026-06-08,Amistoso Internacional
+España,Cabo Verde,0,0,2026-06-15,Mundial 2026
+Cabo Verde,Esuatini,3,0,2025-10-13,Eliminatorias Africanas
+Cabo Verde,Irán,0,0,2025-11-13,Amistoso Internacional
+Cabo Verde,Egipto,1,1,2025-11-17,Amistoso Internacional
+Cabo Verde,Chile,2,4,2026-03-26,FIFA Series
+Cabo Verde,Finlandia,1,1,2026-03-29,FIFA Series
+Cabo Verde,Serbia,3,0,2026-05-31,Amistoso Internacional
+Cabo Verde,Bermuda,3,0,2026-06-06,Amistoso Internacional
+Cabo Verde,España,0,0,2026-06-15,Mundial 2026
+Arabia Saudita,Jordania,0,1,2024-12-15,Copa Árabe FIFA
+Arabia Saudita,Egipto,0,4,2026-03-27,Amistoso Internacional
+Arabia Saudita,Sudán,1,2,2026-03-28,Amistoso Internacional
+Arabia Saudita,Sudán,3,0,2026-03-31,Amistoso Internacional
+Arabia Saudita,Serbia,1,2,2026-03-31,Amistoso Internacional
+Arabia Saudita,Ecuador,1,2,2026-05-30,Amistoso Internacional
+Arabia Saudita,Puerto Rico,3,0,2026-06-05,Amistoso Internacional
+Arabia Saudita,Senegal,0,0,2026-06-09,Amistoso Internacional
+Arabia Saudita,Uruguay,1,1,2026-06-15,Mundial 2026
+Uruguay,Perú,3,0,2025-09-04,Eliminatorias CONMEBOL
+Uruguay,Chile,0,0,2025-09-09,Eliminatorias CONMEBOL
+Uruguay,Rep. Dominicana,1,0,2025-10-10,Amistoso Internacional
+Uruguay,Uzbekistán,2,1,2025-10-13,Amistoso Internacional
+Uruguay,México,0,0,2025-11-15,Amistoso Internacional
+Uruguay,Estados Unidos,1,5,2025-11-18,Amistoso Internacional
+Uruguay,Inglaterra,1,1,2026-03-27,Amistoso Internacional
+Uruguay,Argelia,0,0,2026-03-31,Amistoso Internacional
+Uruguay,Arabia Saudita,1,1,2026-06-15,Mundial 2026
+Francia,Ucrania,2,0,2025-09-05,Eliminatorias UEFA
+Francia,Islandia,2,1,2025-09-09,Eliminatorias UEFA
+Francia,Azerbaiyán,3,0,2025-10-10,Eliminatorias UEFA
+Francia,Islandia,2,2,2025-10-13,Eliminatorias UEFA
+Francia,Ucrania,4,0,2025-11-13,Eliminatorias UEFA
+Francia,Azerbaiyán,3,1,2025-11-16,Eliminatorias UEFA
+Francia,Brasil,2,1,2025-03-26,Amistoso Internacional
+Francia,Colombia,3,1,2025-03-29,Amistoso Internacional
+Francia,Costa de Marfil,1,2,2025-06-04,Amistoso Internacional
+Francia,Irlanda del Norte,3,1,2025-06-08,Amistoso Internacional
+Senegal,RD Congo,1,1,2024-12-27,Copa Africana
+Senegal,Benin,3,0,2024-12-30,Copa Africana
+Senegal,Sudán,3,1,2025-01-03,Copa Africana
+Senegal,Mali,1,0,2025-01-09,Copa Africana
+Senegal,Egipto,1,0,2025-01-14,Copa Africana
+Senegal,Marruecos,0,3,2025-01-18,Copa Africana
+Senegal,Perú,2,0,2025-03-28,Amistoso Internacional
+Senegal,Gambia,3,1,2025-03-31,Amistoso Internacional
+Senegal,Estados Unidos,2,3,2025-05-31,Amistoso Internacional
+Senegal,Arabia Saudita,0,0,2026-06-09,Amistoso Internacional
+Irak,Emiratos Árabes,1,1,2025-11-14,Eliminatorias Asia
+Irak,Emiratos Árabes,2,1,2025-11-18,Eliminatorias Asia
+Irak,Bahrein,2,1,2024-12-03,Copa Árabe FIFA
+Irak,Sudán,2,0,2024-12-06,Copa Árabe FIFA
+Irak,Argelia,0,2,2024-12-09,Copa Árabe FIFA
+Irak,Jordania,0,1,2026-03-27,Amistoso Internacional
+Irak,Bolivia,2,1,2026-03-31,Repechaje Mundial
+Irak,Andorra,1,0,2026-05-29,Amistoso Internacional
+Irak,España,1,1,2026-06-04,Amistoso Internacional
+Irak,Venezuela,0,2,2026-06-09,Amistoso Internacional
+Noruega,Italia,4,1,2025-09-05,Eliminatorias UEFA
+Noruega,Finlandia,1,0,2025-09-05,Amistoso Internacional
+Noruega,Moldavia,11,1,2025-09-09,Eliminatorias UEFA
+Noruega,Israel,5,0,2025-10-11,Eliminatorias UEFA
+Noruega,Nueva Zelanda,1,1,2025-10-14,Amistoso Internacional
+Noruega,Estonia,4,1,2025-11-13,Eliminatorias UEFA
+Noruega,Países Bajos,1,2,2026-03-28,Amistoso Internacional
+Noruega,Suiza,0,0,2026-03-31,Amistoso Internacional
+Noruega,Suecia,3,1,2026-06-01,Amistoso Internacional
+Noruega,Marruecos,1,1,2026-06-07,Amistoso Internacional
+Austria,Chipre,1,0,2025-09-06,Eliminatorias UEFA
+Austria,Bosnia Herzegovina,2,1,2025-09-09,Eliminatorias UEFA
+Austria,San Marino,10,0,2025-10-09,Eliminatorias UEFA
+Austria,Rumania,0,1,2025-10-12,Eliminatorias UEFA
+Austria,Chipre,2,0,2025-11-15,Eliminatorias UEFA
+Austria,Bosnia Herzegovina,1,1,2025-11-18,Eliminatorias UEFA
+Austria,Ghana,5,1,2026-03-27,Amistoso Internacional
+Austria,Corea del Sur,1,0,2026-03-31,Amistoso Internacional
+Austria,Túnez,1,0,2026-06-01,Amistoso Internacional
+Argelia,Emiratos Árabes,1,1,2024-12-09,Copa Árabe FIFA
+Argelia,Sudán,3,0,2024-12-24,Copa Africana
+Argelia,Burkina Faso,1,0,2024-12-28,Copa Africana
+Argelia,Guinea Ecuatorial,3,1,2024-12-31,Copa Africana
+Argelia,RD Congo,1,0,2025-01-06,Copa Africana
+Argelia,Nigeria,0,2,2025-01-09,Copa Africana
+Argelia,Guatemala,7,0,2026-03-27,Amistoso Internacional
+Argelia,Uruguay,0,0,2026-03-31,Amistoso Internacional
+Argelia,Países Bajos,1,0,2026-06-03,Amistoso Internacional
+Argelia,Bolivia,4,0,2026-06-10,Amistoso Internacional
+Colombia,Bolivia,3,0,2025-09-04,Eliminatorias CONMEBOL
+Colombia,Venezuela,6,3,2025-09-09,Eliminatorias CONMEBOL
+Colombia,México,4,0,2025-10-11,Amistoso Internacional
+Colombia,Canadá,0,0,2025-10-14,Amistoso Internacional
+Colombia,Nueva Zelanda,2,1,2025-11-15,Amistoso Internacional
+Colombia,Australia,3,0,2025-11-18,Amistoso Internacional
+Colombia,Croacia,1,2,2026-03-26,Amistoso Internacional
+Colombia,Francia,1,3,2026-03-29,Amistoso Internacional
+Colombia,Costa Rica,3,1,2026-06-01,Amistoso Internacional
+Colombia,Jordania,2,0,2026-06-07,Amistoso Internacional
+Inglaterra,Andorra,2,0,2025-09-05,Eliminatorias UEFA
+Inglaterra,Serbia,5,0,2025-09-09,Eliminatorias UEFA
+Inglaterra,Gales,3,0,2025-10-09,Amistoso Internacional
+Inglaterra,Letonia,5,0,2025-10-14,Eliminatorias UEFA
+Inglaterra,Serbia,2,0,2025-11-13,Eliminatorias UEFA
+Inglaterra,Albania,2,0,2025-11-16,Eliminatorias UEFA
+Inglaterra,Uruguay,1,1,2026-03-27,Amistoso Internacional
+Inglaterra,Japón,0,1,2026-03-31,Amistoso Internacional
+Inglaterra,Nueva Zelanda,1,0,2026-06-06,Amistoso Internacional
+Inglaterra,Costa Rica,3,0,2026-06-10,Amistoso Internacional
+Portugal,Armenia,5,0,2025-09-06,Eliminatorias UEFA
+Portugal,Hungría,3,2,2025-09-09,Eliminatorias UEFA
+Portugal,Irlanda,1,0,2025-10-11,Eliminatorias UEFA
+Portugal,Hungría,2,2,2025-10-14,Eliminatorias UEFA
+Portugal,Irlanda,0,2,2025-11-13,Eliminatorias UEFA
+Portugal,Armenia,9,1,2025-11-16,Eliminatorias UEFA
+Portugal,México,0,0,2025-03-28,Amistoso Internacional
+Portugal,Estados Unidos,2,0,2025-03-31,Amistoso Internacional
+Portugal,Chile,2,1,2026-06-06,Amistoso Internacional
+Portugal,Nigeria,2,1,2026-06-10,Amistoso Internacional
+Uzbekistán,Irán,1,0,2025-09-08,CAFA Nations Cup
+Uzbekistán,Kuwait,2,0,2025-10-09,Amistoso Internacional
+Uzbekistán,Uruguay,1,2,2025-10-13,Amistoso Internacional
+Uzbekistán,Egipto,2,0,2025-11-14,Amistoso Internacional
+Uzbekistán,Irán,0,0,2025-11-18,Amistoso Internacional
+Uzbekistán,China,2,2,2026-01-26,Amistoso Internacional
+Uzbekistán,Gabón,3,1,2026-03-27,FIFA Series
+Uzbekistán,Venezuela,0,0,2026-03-30,FIFA Series
+Uzbekistán,Canadá,0,2,2026-06-01,Amistoso Internacional
+Uzbekistán,Países Bajos,1,2,2026-06-08,Amistoso Internacional
+Jordania,Mali,0,0,2024-11-19,Amistoso Internacional
+Jordania,Emiratos Árabes,2,1,2024-12-03,Copa Árabe FIFA
+Jordania,Kuwait,3,1,2024-12-06,Copa Árabe FIFA
+Jordania,Egipto,3,0,2024-12-09,Copa Árabe FIFA
+Jordania,Irak,1,0,2024-12-12,Copa Árabe FIFA
+Jordania,Arabia Saudita,1,0,2024-12-15,Copa Árabe FIFA
+Jordania,Marruecos,2,3,2024-12-18,Copa Árabe FIFA
+Jordania,Costa Rica,2,2,2026-03-27,Amistoso Internacional
+Jordania,Nigeria,2,2,2026-03-31,Amistoso Internacional
+Jordania,Suiza,1,4,2026-05-31,Amistoso Internacional
+Jordania,Colombia,0,2,2026-06-07,Amistoso Internacional
+República del Congo,Sudán,1,1,2024-08-05,African Nations Championship
+República del Congo,Senegal,1,1,2024-08-12,African Nations Championship
+República del Congo,Nigeria,0,2,2024-08-19,African Nations Championship
+República del Congo,Tanzania,1,1,2025-09-05,Eliminatorias Africanas
+República del Congo,Niger,1,3,2025-10-08,Eliminatorias Africanas
+República del Congo,Marruecos,0,1,2025-10-14,Eliminatorias Africanas
+Croacia,Islas Feroe,1,0,2025-09-05,Eliminatorias UEFA
+Croacia,Montenegro,4,0,2025-09-08,Eliminatorias UEFA
+Croacia,Rep. Checa,0,0,2025-10-09,Eliminatorias UEFA
+Croacia,Gibraltar,3,0,2025-10-12,Eliminatorias UEFA
+Croacia,Islas Feroe,3,1,2025-11-14,Eliminatorias UEFA
+Croacia,Montenegro,3,2,2025-11-17,Eliminatorias UEFA
+Croacia,Colombia,2,1,2026-03-26,Amistoso Internacional
+Croacia,Brasil,1,3,2026-03-31,Amistoso Internacional
+Croacia,Bélgica,0,2,2026-06-02,Amistoso Internacional
+Croacia,Eslovenia,2,1,2026-06-07,Amistoso Internacional
+Ghana,Chad,1,1,2025-09-04,Eliminatorias Africanas
+Ghana,Mali,1,0,2025-09-08,Eliminatorias Africanas
+Ghana,Rep. Centroafricana,5,0,2025-10-08,Eliminatorias Africanas
+Ghana,Comoros,1,0,2025-10-12,Eliminatorias Africanas
+Ghana,Corea del Sur,0,1,2024-11-19,Amistoso Internacional
+Ghana,Sudáfrica,0,1,2024-12-16,Amistoso Internacional
+Ghana,Austria,1,5,2026-03-27,Amistoso Internacional
+Ghana,Alemania,1,2,2026-03-30,Amistoso Internacional
+Ghana,México,0,2,2026-05-22,Amistoso Internacional
+Ghana,Gales,1,1,2026-06-02,Amistoso Internacional
+Ghana,Japón,0,2,2025-11-14,Amistoso Internacional
+Panamá,Guatemala,1,1,2025-09-08,CONCACAF Eliminatorias
+Panamá,El Salvador,1,0,2025-10-10,CONCACAF Eliminatorias
+Panamá,Surinam,1,1,2025-10-14,CONCACAF Eliminatorias
+Panamá,Guatemala,3,2,2025-11-13,CONCACAF Eliminatorias
+Panamá,El Salvador,3,0,2025-11-18,CONCACAF Eliminatorias
+Panamá,Bolivia,1,1,2026-01-18,Amistoso Internacional
+Panamá,México,0,1,2026-01-22,Amistoso Internacional
+Panamá,Sudáfrica,1,1,2026-03-27,Amistoso Internacional
+Panamá,Sudáfrica,2,1,2026-03-31,Amistoso Internacional
+Panamá,Brasil,2,6,2026-05-31,Amistoso Internacional
+Panamá,Rep. Dominicana,4,2,2026-06-03,Amistoso Internacional
+Panamá,Bosnia Herzegovina,1,1,2026-06-06,Amistoso Internacional

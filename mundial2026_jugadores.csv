@@ -1,0 +1,1249 @@
+equipo,nombre,posicion,rating
+Argelia,Mastil Melvin,Portero,62
+Argelia,Mandi Aissa,Defensa,79
+Argelia,Abada Achref,Defensa,68
+Argelia,Tougai Mohamed Amine,Defensa,67
+Argelia,Belaid Zineddine,Defensa,66
+Argelia,Zerrouki Ramiz,Mediocampista,75
+Argelia,Mahrez Riyad,Delantero,84
+Argelia,Aouar Houssem,Mediocampista,78
+Argelia,Gouiri Amine,Delantero,77
+Argelia,Chaibi Fares,Mediocampista,76
+Argelia,Hadj Moussa Anis,Delantero,74
+Argelia,Benbouali Nadhir,Delantero,66
+Argelia,Hadjam Jaouen,Defensa,70
+Argelia,Boudaoui Hicham,Mediocampista,74
+Argelia,Ait-Nouri Rayan,Defensa,80
+Argelia,Benbot Oussama,Portero,63
+Argelia,Belghali Rak,Defensa,67
+Argelia,Amoura Mohamed,Delantero,76
+Argelia,Bentaleb Nabil,Mediocampista,75
+Argelia,Boulbina Adil,Delantero,68
+Argelia,Bensebaini Ramy,Defensa,78
+Argelia,Maza Ibrahim,Mediocampista,72
+Argelia,Zidane Luca,Portero,64
+Argelia,Titraoui Yassine,Mediocampista,65
+Argelia,Ghedjemis Fares,Delantero,67
+Argelia,Chergui Samir,Defensa,65
+Argentina,Musso Juan,Portero,82
+Argentina,Senesi Marcos,Mediocampista,78
+Argentina,Tagliafico Nicolas,Defensa,80
+Argentina,Montiel Gonzalo,Defensa,78
+Argentina,Paredes Leandro,Mediocampista,82
+Argentina,Martinez Lisandro,Defensa,85
+Argentina,De Paul Rodrigo,Mediocampista,85
+Argentina,Barco Valentin,Mediocampista,73
+Argentina,Alvarez Julian,Delantero,88
+Argentina,Messi Lionel,Delantero,91
+Argentina,Lo Celso Giovani,Mediocampista,81
+Argentina,Rulli Geronimo,Portero,78
+Argentina,Romero Cristian,Defensa,85
+Argentina,Palacios Exequiel,Mediocampista,80
+Argentina,Gonzalez Nico,Delantero,82
+Argentina,Almada Thiago,Delantero,77
+Argentina,Simeone Giuliano,Delantero,74
+Argentina,Paz Nico,Mediocampista,74
+Argentina,Otamendi Nicolas,Defensa,83
+Argentina,Mac Allister Alexis,Mediocampista,85
+Argentina,Lopez Jose Manuel,Delantero,68
+Argentina,Martinez Lautaro,Delantero,89
+Argentina,Martinez Emiliano,Portero,89
+Argentina,Fernandez Enzo,Mediocampista,84
+Argentina,Medina Facundo,Defensa,76
+Argentina,Molina Nahuel,Defensa,82
+Australia,Ryan Mathew,Portero,78
+Australia,Degenek Milos,Defensa,72
+Australia,Circati Alessandro,Defensa,70
+Australia,Italiano Jacob,Defensa,68
+Australia,Bos Jordan,Defensa,71
+Australia,Geria Jason,Defensa,67
+Australia,Leckie Mathew,Delantero,74
+Australia,Metcalfe Connor,Mediocampista,72
+Australia,Toure Mohamed,Delantero,70
+Australia,Hrustic Ajdin,Delantero,73
+Australia,Mabil Awer,Delantero,74
+Australia,Izzo Paul,Portero,68
+Australia,Oneill Aiden,Mediocampista,70
+Australia,Devlin Cameron,Mediocampista,68
+Australia,Trewin Kai,Defensa,67
+Australia,Behich Aziz,Defensa,72
+Australia,Irankunda Nestory,Delantero,72
+Australia,Beach Patrick,Portero,65
+Australia,Souttar Harry,Defensa,74
+Australia,Volpato Cristian,Delantero,69
+Australia,Burgess Cameron,Defensa,70
+Australia,Irvine Jackson,Mediocampista,73
+Australia,Velupillay Nishan,Delantero,67
+Australia,Okon-Engstler Paul,Mediocampista,65
+Australia,Herrington Lucas,Defensa,65
+Australia,Yengi Tete,Delantero,68
+Austria,Schlager Alexander,Portero,76
+Austria,Affengruber David,Defensa,68
+Austria,Danso Kevin,Defensa,80
+Austria,Schlager Xaver,Mediocampista,82
+Austria,Posch Stefan,Defensa,78
+Austria,Seiwald Nicolas,Mediocampista,79
+Austria,Arnautovic Marko,Delantero,80
+Austria,Alaba David,Defensa,84
+Austria,Sabitzer Marcel,Mediocampista,82
+Austria,Grillitsch Florian,Mediocampista,76
+Austria,Gregoritsch Michael,Delantero,77
+Austria,Wiegele Florian,Portero,65
+Austria,Pentz Patrick,Portero,73
+Austria,Kalajdzic Sasa,Delantero,75
+Austria,Lienhart Philipp,Defensa,75
+Austria,Mwene Phillip,Defensa,71
+Austria,Chukwuemeka Carney,Mediocampista,74
+Austria,Schmid Romano,Mediocampista,75
+Austria,Ljubicic Dejan,Mediocampista,72
+Austria,Laimer Konrad,Mediocampista,82
+Austria,Wimmer Patrick,Delantero,74
+Austria,Prass Alexander,Mediocampista,72
+Austria,Friedl Marco,Defensa,74
+Austria,Wanner Paul,Mediocampista,71
+Austria,Svoboda Michael,Defensa,71
+Austria,Schoepf Alessandro,Mediocampista,72
+Bélgica,Courtois Thibaut,Portero,90
+Bélgica,Debast Zeno,Defensa,78
+Bélgica,Theate Arthur,Defensa,77
+Bélgica,Mechele Brandon,Defensa,74
+Bélgica,De Cuyper Maxim,Defensa,76
+Bélgica,Witsel Axel,Mediocampista,80
+Bélgica,De Bruyne Kevin,Mediocampista,91
+Bélgica,Tielemans Youri,Mediocampista,83
+Bélgica,Lukaku Romelu,Delantero,87
+Bélgica,Trossard Leandro,Delantero,83
+Bélgica,Doku Jeremy,Delantero,83
+Bélgica,Lammens Senne,Portero,70
+Bélgica,Penders Mike,Portero,65
+Bélgica,Lukebakio Dodi,Delantero,78
+Bélgica,Meunier Thomas,Defensa,79
+Bélgica,De Winter Koni,Defensa,74
+Bélgica,De Ketelaere Charles,Delantero,82
+Bélgica,Seys Joaquin,Defensa,67
+Bélgica,Moreira Diego,Mediocampista,72
+Bélgica,Vanaken Hans,Mediocampista,79
+Bélgica,Castagne Timothy,Defensa,78
+Bélgica,Saelemaekers Alexis,Mediocampista,78
+Bélgica,Raskin Nicolas,Mediocampista,75
+Bélgica,Onana Amadou,Mediocampista,79
+Bélgica,Ngoy Nathan,Defensa,68
+Bélgica,Fernandez-Pardo Matias,Delantero,68
+Bosnia y Herzegovina,Vasilj Nikola,Portero,74
+Bosnia y Herzegovina,Mujakic Nihad,Defensa,68
+Bosnia y Herzegovina,Hadzikadunic Dennis,Defensa,72
+Bosnia y Herzegovina,Muharemovic Tarik,Defensa,70
+Bosnia y Herzegovina,Kolasinac Sead,Defensa,78
+Bosnia y Herzegovina,Tahirovic Benjamin,Mediocampista,73
+Bosnia y Herzegovina,Dedic Amar,Defensa,72
+Bosnia y Herzegovina,Gigovic Armin,Mediocampista,70
+Bosnia y Herzegovina,Bazdar Samed,Delantero,70
+Bosnia y Herzegovina,Demirovic Ermedin,Delantero,78
+Bosnia y Herzegovina,Dzeko Edin,Delantero,81
+Bosnia y Herzegovina,Jurkas Mladen,Portero,60
+Bosnia y Herzegovina,Basic Ivan,Mediocampista,69
+Bosnia y Herzegovina,Sunjic Ivan,Mediocampista,70
+Bosnia y Herzegovina,Memic Amar,Mediocampista,69
+Bosnia y Herzegovina,Hadziahmetovic Amir,Mediocampista,72
+Bosnia y Herzegovina,Burnic Dzenis,Mediocampista,70
+Bosnia y Herzegovina,Katic Nikola,Defensa,70
+Bosnia y Herzegovina,Alajbegovic Kerim,Delantero,68
+Bosnia y Herzegovina,Bajraktarevic Esmir,Delantero,69
+Bosnia y Herzegovina,Radeljic Stjepan,Defensa,67
+Bosnia y Herzegovina,Zlomislic Martin,Portero,66
+Bosnia y Herzegovina,Tabakovic Haris,Delantero,72
+Bosnia y Herzegovina,Malic Arjan,Defensa,66
+Bosnia y Herzegovina,Lukic Jovo,Delantero,66
+Bosnia y Herzegovina,Mahmic Ermin,Mediocampista,65
+Brasil,Alisson,Portero,90
+Brasil,Ederson Silva,Mediocampista,74
+Brasil,Gabriel Magalhaes,Defensa,85
+Brasil,Marquinhos,Defensa,87
+Brasil,Casemiro,Mediocampista,85
+Brasil,Alex Sandro,Defensa,78
+Brasil,Vinicius Junior,Delantero,91
+Brasil,Bruno Guimaraes,Mediocampista,87
+Brasil,Matheus Cunha,Delantero,82
+Brasil,Neymar Jr,Delantero,87
+Brasil,Raphinha,Delantero,85
+Brasil,Weverton,Portero,76
+Brasil,Danilo,Defensa,79
+Brasil,Bremer,Defensa,84
+Brasil,Leo Pereira,Defensa,77
+Brasil,Douglas Santos,Defensa,74
+Brasil,Fabinho,Mediocampista,83
+Brasil,Danilo Santos,Mediocampista,72
+Brasil,Endrick,Delantero,77
+Brasil,Lucas Paqueta,Mediocampista,86
+Brasil,Luiz Henrique,Delantero,74
+Brasil,Gabriel Martinelli,Delantero,83
+Brasil,Ederson,Portero,86
+Brasil,Roger Ibanez,Defensa,76
+Brasil,Igor Thiago,Delantero,72
+Brasil,Rayan,Delantero,68
+Cabo Verde,Vozinha,Portero,68
+Cabo Verde,Stopira,Defensa,66
+Cabo Verde,Diney Borges,Defensa,66
+Cabo Verde,Pico Lopes,Defensa,65
+Cabo Verde,Logan Costa,Defensa,70
+Cabo Verde,Kevin Pina,Mediocampista,70
+Cabo Verde,Jovane Cabral,Mediocampista,72
+Cabo Verde,Joao Paulo,Mediocampista,68
+Cabo Verde,Gilson Benchimol,Delantero,67
+Cabo Verde,Jamiro Monteiro,Mediocampista,70
+Cabo Verde,Garry Rodrigues,Mediocampista,71
+Cabo Verde,Marcio Rosa,Portero,63
+Cabo Verde,Sidny Lopes Cabral,Defensa,65
+Cabo Verde,Deroy Duarte,Mediocampista,67
+Cabo Verde,Laros Duarte,Mediocampista,68
+Cabo Verde,Yannick Semedo,Mediocampista,66
+Cabo Verde,Willy Semedo,Mediocampista,67
+Cabo Verde,Telmo Arcanjo,Mediocampista,67
+Cabo Verde,Dailon Livramento,Delantero,68
+Cabo Verde,Ryan Mendes,Delantero,68
+Cabo Verde,Nuno Da Costa,Mediocampista,68
+Cabo Verde,Steven Moreira,Defensa,66
+Cabo Verde,Cj Dos Santos,Portero,64
+Cabo Verde,Wagner Pina,Defensa,65
+Cabo Verde,Kelvin Pires,Defensa,65
+Cabo Verde,Helio Varela,Mediocampista,65
+Canadá,St. Clair Dayne,Portero,74
+Canadá,Johnston Alistair,Defensa,77
+Canadá,Jones Ale,Defensa,72
+Canadá,De Fougerolles Luc,Defensa,69
+Canadá,Waterman Joel,Defensa,70
+Canadá,Choiniere Mathieu,Mediocampista,72
+Canadá,Eustaquio Stephen,Mediocampista,78
+Canadá,Kone Ismael,Mediocampista,76
+Canadá,Larin Cyle,Delantero,76
+Canadá,David Jonathan,Delantero,84
+Canadá,Millar Liam,Mediocampista,73
+Canadá,Oluwaseyi Tani,Delantero,73
+Canadá,Cornelius Derek,Defensa,74
+Canadá,Shaffelburg Jacob,Mediocampista,73
+Canadá,Bombito Moise,Defensa,74
+Canadá,Crepeau Maxime,Portero,75
+Canadá,Buchanan Tajon,Delantero,77
+Canadá,Goodman Owen,Portero,65
+Canadá,Davies Alphonso,Defensa,87
+Canadá,Ahmed Ali,Delantero,70
+Canadá,Osorio Jonathan,Mediocampista,74
+Canadá,Laryea Richie,Defensa,72
+Canadá,Sigur Niko,Defensa,69
+Canadá,David Promise,Delantero,70
+Canadá,Saliba Nathan,Mediocampista,70
+Canadá,Nelson Jayden,Delantero,71
+Colombia,Ospina David,Portero,82
+Colombia,Munoz Daniel,Defensa,80
+Colombia,Lucumi Jhon,Defensa,79
+Colombia,Arias Santiago,Defensa,74
+Colombia,Castano Kevin,Mediocampista,74
+Colombia,Rios Richard,Mediocampista,78
+Colombia,Diaz Luis,Delantero,87
+Colombia,Carrascal Jorge,Mediocampista,76
+Colombia,Cordoba Jhon,Delantero,73
+Colombia,Rodriguez James,Mediocampista,83
+Colombia,Arias Jhon,Mediocampista,79
+Colombia,Vargas Camilo,Portero,73
+Colombia,Mina Yerry,Defensa,80
+Colombia,Puerta Gustavo,Defensa,70
+Colombia,Portilla Juan,Mediocampista,71
+Colombia,Lerma Jefferson,Mediocampista,78
+Colombia,Mojica Johan,Defensa,75
+Colombia,Ditta Willer,Defensa,67
+Colombia,Hernandez Cucho,Delantero,78
+Colombia,Quintero Juan,Mediocampista,79
+Colombia,Campaz Jaminton,Delantero,70
+Colombia,Machado Deiver,Defensa,70
+Colombia,Sanchez Davinson,Defensa,83
+Colombia,Montero Alvaro,Portero,72
+Colombia,Suarez Luis,Delantero,74
+Colombia,Gomez Andres,Delantero,69
+Rep. Dem. del Congo,Mpasi Lionel,Portero,70
+Rep. Dem. del Congo,Wan-Bissaka Aaron,Defensa,78
+Rep. Dem. del Congo,Kapuadi Steve,Defensa,66
+Rep. Dem. del Congo,Tuanzebe Axel,Defensa,73
+Rep. Dem. del Congo,Batubinsika Dylan,Defensa,68
+Rep. Dem. del Congo,Mukau Ngalayel,Mediocampista,72
+Rep. Dem. del Congo,Mbuku Nathanael,Mediocampista,70
+Rep. Dem. del Congo,Moutoussamy Samuel,Mediocampista,71
+Rep. Dem. del Congo,Cipenga Brian,Delantero,67
+Rep. Dem. del Congo,Bongonda Theo,Mediocampista,74
+Rep. Dem. del Congo,Kakuta Gael,Delantero,73
+Rep. Dem. del Congo,Kayembe Joris,Defensa,70
+Rep. Dem. del Congo,Elia Meschack,Delantero,73
+Rep. Dem. del Congo,Sadiki Noah,Mediocampista,68
+Rep. Dem. del Congo,Tshibola Aaron,Mediocampista,69
+Rep. Dem. del Congo,Fayulu Timothy,Portero,66
+Rep. Dem. del Congo,Bakambu Cedric,Delantero,78
+Rep. Dem. del Congo,Pickel Charles,Mediocampista,72
+Rep. Dem. del Congo,Mayele Fiston,Delantero,72
+Rep. Dem. del Congo,Wissa Yoane,Delantero,78
+Rep. Dem. del Congo,Epolo Matthieu,Portero,65
+Rep. Dem. del Congo,Mbemba Chancel,Defensa,76
+Rep. Dem. del Congo,Banza Simon,Delantero,73
+Rep. Dem. del Congo,Kalulu Gedeon,Defensa,70
+Rep. Dem. del Congo,Kayembe Edo,Mediocampista,73
+Rep. Dem. del Congo,Masuaku Arthur,Defensa,73
+Costa de Marfil,Fofana Yahia,Portero,73
+Costa de Marfil,Diomande Ousmane,Defensa,77
+Costa de Marfil,Konan Ghislain,Defensa,73
+Costa de Marfil,Seri Jean Michael,Mediocampista,77
+Costa de Marfil,Singo Wilfried,Defensa,78
+Costa de Marfil,Fofana Seko,Mediocampista,83
+Costa de Marfil,Kossounou Odilon,Defensa,79
+Costa de Marfil,Kessie Franck,Mediocampista,85
+Costa de Marfil,Bonny Ange-Yoan,Delantero,74
+Costa de Marfil,Adingra Simon,Delantero,78
+Costa de Marfil,Diomande Yan,Delantero,72
+Costa de Marfil,Wahi Elye,Delantero,75
+Costa de Marfil,Operi Christopher,Defensa,68
+Costa de Marfil,Diakite Oumar,Delantero,72
+Costa de Marfil,Diallo Amad,Delantero,79
+Costa de Marfil,Kone Mohamed,Portero,66
+Costa de Marfil,Doue Guela,Defensa,74
+Costa de Marfil,Sangare Ibrahim,Mediocampista,81
+Costa de Marfil,Pepe Nicolas,Delantero,80
+Costa de Marfil,Agbadou Emmanuel,Defensa,74
+Costa de Marfil,Ndicka Evan,Defensa,79
+Costa de Marfil,Guessand Evann,Delantero,73
+Costa de Marfil,Lafont Alban,Portero,74
+Costa de Marfil,Toure Bazoumana,Delantero,68
+Costa de Marfil,Guiagon Parfait,Mediocampista,66
+Costa de Marfil,Oulai Christ Inao,Mediocampista,66
+Croacia,Livakovic Dominik,Portero,84
+Croacia,Stanisic Josip,Defensa,78
+Croacia,Pongracic Marin,Defensa,77
+Croacia,Gvardiol Josko,Defensa,87
+Croacia,Caleta-Car Duje,Defensa,78
+Croacia,Sutalo Josip,Defensa,76
+Croacia,Moro Nikola,Mediocampista,72
+Croacia,Kovacic Mateo,Mediocampista,85
+Croacia,Kramaric Andrej,Delantero,83
+Croacia,Modric Luka,Mediocampista,87
+Croacia,Budimir Ante,Delantero,76
+Croacia,Pandur Ivor,Portero,67
+Croacia,Vlasic Nikola,Mediocampista,79
+Croacia,Perisic Ivan,Delantero,82
+Croacia,Pasalic Mario,Mediocampista,82
+Croacia,Baturina Martin,Mediocampista,74
+Croacia,Sucic Petar,Mediocampista,75
+Croacia,Jakic Kristijan,Defensa,72
+Croacia,Fruk Toni,Mediocampista,70
+Croacia,Matanovic Igor,Delantero,71
+Croacia,Sucic Luka,Mediocampista,75
+Croacia,Vuskovic Luka,Defensa,70
+Croacia,Kotarski Dominik,Portero,71
+Croacia,Pasalic Marco,Delantero,72
+Croacia,Erlic Martin,Defensa,73
+Croacia,Musa Petar,Delantero,73
+Curazao,Room Eloy,Portero,70
+Curazao,Sambo Shurandy,Defensa,65
+Curazao,Gaari Jurien,Defensa,66
+Curazao,Van Eijma Roshon,Defensa,65
+Curazao,Floranus Sherel,Defensa,65
+Curazao,Roemeratoe Godfried,Mediocampista,65
+Curazao,Bacuna Juninho,Mediocampista,70
+Curazao,Comenencia Livano,Mediocampista,68
+Curazao,Locadia Juergen,Delantero,72
+Curazao,Bacuna Leandro,Mediocampista,71
+Curazao,Antonisse Jeremy,Delantero,66
+Curazao,Hansen Sontje,Delantero,68
+Curazao,Noslin Tyrese,Delantero,67
+Curazao,Gorre Kenji,Delantero,69
+Curazao,Martha Arjany,Mediocampista,66
+Curazao,Margaritha Jearl,Delantero,67
+Curazao,Kuwas Brandley,Delantero,69
+Curazao,Obispo Armando,Defensa,68
+Curazao,Kastaneer Gervane,Delantero,70
+Curazao,Brenet Joshua,Defensa,66
+Curazao,Chong Tahith,Mediocampista,73
+Curazao,Felida Kevin,Mediocampista,65
+Curazao,Bazoer Riechedly,Defensa,66
+Curazao,Fonville Deveron,Defensa,65
+Curazao,Bodak Tyrick,Portero,63
+Curazao,Doornbusch Trevor,Portero,64
+República Checa,Kovar Matej,Portero,78
+República Checa,Zima David,Defensa,73
+República Checa,Holes Tomas,Defensa,73
+República Checa,Hranac Robin,Defensa,74
+República Checa,Coufal Vladimir,Defensa,76
+República Checa,Chaloupek Stepan,Defensa,68
+República Checa,Krejci Ladislav,Defensa,75
+República Checa,Darida Vladimir,Mediocampista,74
+República Checa,Hlozek Adam,Delantero,77
+República Checa,Schick Patrik,Delantero,84
+República Checa,Kuchta Jan,Delantero,74
+República Checa,Cerv Lukas,Mediocampista,70
+República Checa,Chytil Mojmir,Delantero,73
+República Checa,Jurasek David,Defensa,72
+República Checa,Sulc Pavel,Delantero,73
+República Checa,Stanek Jindrich,Portero,76
+República Checa,Provod Lukas,Mediocampista,74
+República Checa,Sadilek Michal,Mediocampista,72
+República Checa,Chory Tomas,Delantero,72
+República Checa,Zeleny Jaroslav,Defensa,70
+República Checa,Doudera David,Defensa,71
+República Checa,Soucek Tomas,Mediocampista,82
+República Checa,Hornicek Lukas,Portero,67
+República Checa,Sojka Alexandr,Mediocampista,68
+República Checa,Sochurek Hugo,Mediocampista,65
+República Checa,Visinsky Denis,Delantero,68
+Ecuador,Galindez Hernan,Portero,73
+Ecuador,Torres Felix,Defensa,78
+Ecuador,Hincapie Piero,Defensa,82
+Ecuador,Ordonez Joel,Defensa,73
+Ecuador,Alcivar Jordy,Mediocampista,70
+Ecuador,Pacho Willian,Defensa,81
+Ecuador,Estupinan Pervis,Defensa,82
+Ecuador,Valencia Anthony,Mediocampista,69
+Ecuador,Yeboah John,Delantero,71
+Ecuador,Paez Kendry,Mediocampista,74
+Ecuador,Rodriguez Kevin,Delantero,73
+Ecuador,Ramirez Moises,Portero,67
+Ecuador,Valencia Enner,Delantero,79
+Ecuador,Minda Alan,Mediocampista,70
+Ecuador,Vite Pedro,Mediocampista,69
+Ecuador,Caicedo Jordy,Delantero,72
+Ecuador,Preciado Angelo,Defensa,74
+Ecuador,Castillo Denil,Mediocampista,69
+Ecuador,Plata Gonzalo,Delantero,77
+Ecuador,Angulo Nilson,Delantero,70
+Ecuador,Franco Alan,Mediocampista,73
+Ecuador,Valle Gonzalo,Portero,66
+Ecuador,Caicedo Moises,Mediocampista,85
+Ecuador,Arevalo Jeremy,Delantero,68
+Ecuador,Porozo Jackson,Defensa,70
+Ecuador,Medina Yaimar,Defensa,67
+Egipto,Mohamed Elshenawy,Portero,77
+Egipto,Yasser Ibrahim,Defensa,69
+Egipto,Mohamed Hany,Defensa,71
+Egipto,Hossam Abdelmaguid,Defensa,68
+Egipto,Ramy Rabia,Defensa,70
+Egipto,Mohamed Abdelmoneim,Defensa,71
+Egipto,Trezeguet,Delantero,79
+Egipto,Emam Ashour,Mediocampista,73
+Egipto,Hamza Abdelkarim,Delantero,67
+Egipto,Mohamed Salah,Delantero,90
+Egipto,Mostafa Zico,Mediocampista,68
+Egipto,Haissem Hassan,Delantero,68
+Egipto,Ahmed Fatouh,Defensa,68
+Egipto,Hamdy Fathy,Mediocampista,72
+Egipto,Karim Hafez,Defensa,67
+Egipto,Mahdy Soliman,Portero,64
+Egipto,Mohanad Lashin,Mediocampista,70
+Egipto,Nabil Donga,Mediocampista,68
+Egipto,Marawan Attia,Mediocampista,69
+Egipto,Ibrahim Adel,Delantero,72
+Egipto,Mahmoud Saber,Mediocampista,67
+Egipto,Omar Marmoush,Delantero,83
+Egipto,Mostafa Shoubir,Portero,69
+Egipto,Tarek Alaa,Defensa,65
+Egipto,Zizo,Delantero,71
+Egipto,Mohamed Alaa,Portero,63
+Inglaterra,Pickford Jordan,Portero,84
+Inglaterra,Konsa Ezri,Defensa,82
+Inglaterra,Oreilly Nico,Defensa,71
+Inglaterra,Rice Declan,Mediocampista,87
+Inglaterra,Stones John,Defensa,85
+Inglaterra,Guehi Marc,Defensa,82
+Inglaterra,Saka Bukayo,Delantero,88
+Inglaterra,Anderson Elliot,Mediocampista,74
+Inglaterra,Kane Harry,Delantero,91
+Inglaterra,Bellingham Jude,Mediocampista,91
+Inglaterra,Rashford Marcus,Delantero,85
+Inglaterra,Livramento Tino,Defensa,74
+Inglaterra,Henderson Dean,Portero,78
+Inglaterra,Henderson Jordan,Mediocampista,79
+Inglaterra,Burn Dan,Defensa,74
+Inglaterra,Mainoo Kobbie,Mediocampista,78
+Inglaterra,Rogers Morgan,Mediocampista,77
+Inglaterra,Gordon Anthony,Delantero,78
+Inglaterra,Watkins Ollie,Delantero,83
+Inglaterra,Madueke Noni,Delantero,78
+Inglaterra,Eze Eberechi,Mediocampista,81
+Inglaterra,Toney Ivan,Delantero,78
+Inglaterra,Trafford James,Portero,72
+Inglaterra,James Reece,Defensa,84
+Inglaterra,Spence Djed,Defensa,72
+Inglaterra,Quansah Jarell,Defensa,72
+Francia,Samba Brice,Portero,76
+Francia,Gusto Malo,Defensa,77
+Francia,Digne Lucas,Defensa,79
+Francia,Upamecano Dayot,Defensa,85
+Francia,Kounde Jules,Defensa,86
+Francia,Kone Manu,Mediocampista,76
+Francia,Dembele Ousmane,Delantero,87
+Francia,Tchouameni Aurelien,Mediocampista,86
+Francia,Thuram Marcus,Delantero,83
+Francia,Mbappe Kylian,Delantero,91
+Francia,Olise Michael,Delantero,84
+Francia,Barcola Bradley,Delantero,80
+Francia,Kante Ngolo,Mediocampista,86
+Francia,Rabiot Adrien,Mediocampista,82
+Francia,Konate Ibrahima,Defensa,85
+Francia,Maignan Mike,Portero,88
+Francia,Saliba William,Defensa,87
+Francia,Zaire-Emery Warren,Mediocampista,78
+Francia,Hernandez Theo,Defensa,85
+Francia,Doue Desire,Delantero,77
+Francia,Hernandez Lucas,Defensa,81
+Francia,Mateta Jean-Philippe,Delantero,77
+Francia,Risser Robin,Portero,65
+Francia,Cherki Rayan,Mediocampista,77
+Francia,Akliouche Maghnes,Mediocampista,75
+Francia,Lacroix Maxence,Defensa,74
+Alemania,Neuer Manuel,Portero,89
+Alemania,Ruediger Antonio,Defensa,86
+Alemania,Anton Waldemar,Defensa,79
+Alemania,Tah Jonathan,Defensa,82
+Alemania,Pavlovic Aleksandar,Mediocampista,78
+Alemania,Kimmich Joshua,Defensa,88
+Alemania,Havertz Kai,Delantero,85
+Alemania,Goretzka Leon,Mediocampista,83
+Alemania,Leweling Jamie,Mediocampista,73
+Alemania,Musiala Jamal,Mediocampista,88
+Alemania,Woltemade Nick,Delantero,74
+Alemania,Baumann Oliver,Portero,76
+Alemania,Gross Pascal,Mediocampista,78
+Alemania,Beier Maximilian,Delantero,76
+Alemania,Schlotterbeck Nico,Defensa,82
+Alemania,Stiller Angelo,Mediocampista,75
+Alemania,Wirtz Florian,Mediocampista,89
+Alemania,Brown Nathaniel,Defensa,70
+Alemania,Sane Leroy,Mediocampista,85
+Alemania,Amiri Nadiem,Mediocampista,72
+Alemania,Nuebel Alexander,Portero,77
+Alemania,Raum David,Defensa,78
+Alemania,Nmecha Felix,Mediocampista,74
+Alemania,Thiaw Malick,Defensa,78
+Alemania,Ouedraogo Assan,Mediocampista,69
+Alemania,Undav Deniz,Delantero,77
+Ghana,Zigi Lawrence,Portero,71
+Ghana,Seidu Alidu,Defensa,73
+Ghana,Yirenkyi Caleb,Mediocampista,69
+Ghana,Adjetey Jonas,Defensa,69
+Ghana,Partey Thomas,Mediocampista,84
+Ghana,Mumin Abdul,Defensa,70
+Ghana,Fatawu Abdul,Delantero,74
+Ghana,Sibo Kwasi,Mediocampista,69
+Ghana,Ayew Jordan,Delantero,78
+Ghana,Thomas-Asante Brandon,Delantero,71
+Ghana,Semenyo Antoine,Mediocampista,76
+Ghana,Anang Joseph,Portero,66
+Ghana,Bonsu Baah Christopher,Delantero,69
+Ghana,Mensah Gideon,Defensa,71
+Ghana,Owusu Elisha,Mediocampista,70
+Ghana,Asare Benjamin,Portero,64
+Ghana,Rahman Baba,Defensa,75
+Ghana,Opoku Jerome,Defensa,69
+Ghana,Williams Inaki,Delantero,78
+Ghana,Boakye Augustine,Mediocampista,66
+Ghana,Oppong Kojo Peprah,Defensa,68
+Ghana,Sulemana Kamaldeen,Delantero,76
+Ghana,Luckassen Derrick,Defensa,67
+Ghana,Nuamah Ernest,Delantero,73
+Ghana,Adu Prince,Delantero,68
+Ghana,Senaya Marvin,Defensa,66
+Haití,Placide Johny,Portero,69
+Haití,Arcus Carlens,Defensa,65
+Haití,Thermoncy Keeto,Defensa,62
+Haití,Ade Ricardo,Defensa,65
+Haití,Delcroix Hannes,Defensa,64
+Haití,Sainte Carl,Mediocampista,64
+Haití,Etienne Derrick,Delantero,68
+Haití,Experience Martin,Defensa,64
+Haití,Nazon Duckens,Delantero,70
+Haití,Bellegarde Jean-Ricner,Mediocampista,68
+Haití,Deedson Louicius,Delantero,67
+Haití,Pierre Alexandre,Portero,65
+Haití,Lacroix Markhus,Defensa,63
+Haití,Metusala Garven,Defensa,63
+Haití,Providence Ruben,Delantero,66
+Haití,Joseph Lenny,Delantero,65
+Haití,Jean Jacques Danley,Mediocampista,66
+Haití,Isidor Wilson,Delantero,67
+Haití,Fortune Yassin,Delantero,64
+Haití,Pierrot Frantzdy,Delantero,69
+Haití,Casimir Josue,Delantero,65
+Haití,Duverne Jean-Kevin,Defensa,65
+Haití,Duverger Josue,Portero,63
+Haití,Paugain Wilguens,Defensa,64
+Haití,Simon Dominique,Mediocampista,63
+Haití,Pierre Woodensky,Mediocampista,62
+Irán,Beiranvand Alireza,Portero,77
+Irán,Hardani Saleh,Defensa,66
+Irán,Hajisafi Ehsan,Defensa,73
+Irán,Khalilzadeh Shoja,Defensa,70
+Irán,Mohammadi Milad,Defensa,69
+Irán,Ezatolahi Saeid,Mediocampista,74
+Irán,Jahanbakhsh Alireza,Mediocampista,78
+Irán,Mohebbi Mohammad,Mediocampista,74
+Irán,Taremi Mehdi,Delantero,83
+Irán,Ghayedi Mehdi,Delantero,72
+Irán,Alipour Ali,Delantero,70
+Irán,Niazmand Payam,Portero,71
+Irán,Kanani Hossein,Defensa,71
+Irán,Ghoddos Saman,Mediocampista,73
+Irán,Cheshmi Roozbeh,Mediocampista,71
+Irán,Torabi Mehdi,Mediocampista,72
+Irán,Yousefi Arya,Defensa,67
+Irán,Hosseinzadeh Amirhossein,Delantero,69
+Irán,Nemati Ali,Defensa,67
+Irán,Moghanloo Shahriyar,Delantero,69
+Irán,Ghorbani Mohammad,Mediocampista,67
+Irán,Hosseini Hossein,Portero,69
+Irán,Rezaeian Ramin,Defensa,70
+Irán,Dargahi Dennis,Delantero,65
+Irán,Iri Danial,Defensa,63
+Irán,Razaghinia Amirmohammad,Mediocampista,65
+Irak,Fahad Talib,Portero,68
+Irak,Rebin Sulaka,Defensa,66
+Irak,Hussein Ali,Defensa,67
+Irak,Zaid Tahseen,Defensa,67
+Irak,Akam Hashim,Defensa,66
+Irak,Munaf Younus,Defensa,66
+Irak,Youssef Amyn,Mediocampista,68
+Irak,Ibrahim Bayesh,Mediocampista,70
+Irak,Ali Alhamadi,Delantero,71
+Irak,Mohanad Ali,Delantero,73
+Irak,Ahmed Qasem,Delantero,66
+Irak,Jalal Hassan,Portero,70
+Irak,Ali Yousif,Delantero,67
+Irak,Zidane Iqbal,Mediocampista,71
+Irak,Ahmed Maknazi,Defensa,64
+Irak,Amir Alammari,Mediocampista,69
+Irak,Ali Jasim,Delantero,67
+Irak,Aymen Hussein,Delantero,71
+Irak,Kevin Yakob,Mediocampista,67
+Irak,Aimar Sher,Mediocampista,66
+Irak,Marko Farji,Delantero,65
+Irak,Ahmed Basil,Portero,65
+Irak,Merchas Doski,Defensa,65
+Irak,Zaid Ismael,Mediocampista,65
+Irak,Mustafa Saadoon,Defensa,64
+Irak,Frans Putros,Defensa,65
+Japón,Suzuki Zion,Portero,76
+Japón,Sugawara Yukinari,Defensa,76
+Japón,Taniguchi Shogo,Defensa,73
+Japón,Itakura Kou,Defensa,78
+Japón,Nagatomo Yuto,Defensa,75
+Japón,Machino Shuto,Delantero,73
+Japón,Tanaka Ao,Mediocampista,78
+Japón,Kubo Takefusa,Mediocampista,83
+Japón,Goto Keisuke,Delantero,69
+Japón,Doan Ritsu,Mediocampista,80
+Japón,Maeda Daizen,Delantero,76
+Japón,Osako Keisuke,Portero,70
+Japón,Nakamura Keito,Mediocampista,77
+Japón,Ito Junya,Mediocampista,79
+Japón,Kamada Daichi,Mediocampista,79
+Japón,Watanabe Tsuyoshi,Defensa,72
+Japón,Suzuki Yuito,Mediocampista,71
+Japón,Ueda Ayase,Delantero,78
+Japón,Ogawa Koki,Delantero,74
+Japón,Seko Ayumu,Defensa,71
+Japón,Ito Hiroki,Defensa,78
+Japón,Tomiyasu Takehiro,Defensa,79
+Japón,Hayakawa Tomoki,Portero,72
+Japón,Sano Kaishu,Mediocampista,72
+Japón,Suzuki Junnosuke,Defensa,68
+Japón,Shiogai Kento,Delantero,69
+Jordania,Yazeed Abulaila,Portero,67
+Jordania,Mohammad Abuhasheesh,Defensa,65
+Jordania,Abdallah Nasib,Defensa,65
+Jordania,Husam Abudahab,Defensa,64
+Jordania,Yazan Alarab,Defensa,65
+Jordania,Amer Jamous,Mediocampista,65
+Jordania,Mohammad Abuzraiq,Delantero,67
+Jordania,Noor Alrawabdeh,Mediocampista,66
+Jordania,Ali Olwan,Delantero,68
+Jordania,Mousa Altamari,Delantero,72
+Jordania,Odeh Fakhoury,Delantero,65
+Jordania,Nour Baniateyah,Portero,63
+Jordania,Mahmoud Almardi,Delantero,66
+Jordania,Rajaei Ayed,Mediocampista,65
+Jordania,Ibrahim Sadeh,Mediocampista,65
+Jordania,Mohammad Abualnadi,Defensa,63
+Jordania,Saleem Obaid,Defensa,63
+Jordania,Mohammad Abughoush,Mediocampista,62
+Jordania,Saed Alrosan,Defensa,64
+Jordania,Mohannad Abutaha,Mediocampista,64
+Jordania,Nizar Alrashdan,Mediocampista,65
+Jordania,Abdallah Alfakhori,Portero,63
+Jordania,Ehsan Haddad,Defensa,64
+Jordania,Ali Azaizeh,Delantero,64
+Jordania,Mohammad Aldaoud,Mediocampista,64
+Jordania,Anas Badawi,Defensa,63
+Corea del Sur,Kim Seunggyu,Portero,76
+Corea del Sur,Lee Hanbeom,Defensa,70
+Corea del Sur,Lee Gihyuk,Mediocampista,70
+Corea del Sur,Kim Minjae,Defensa,87
+Corea del Sur,Kim Taehyeon,Defensa,70
+Corea del Sur,Hwang Inbeom,Mediocampista,76
+Corea del Sur,Son Heungmin,Delantero,87
+Corea del Sur,Paik Seungho,Mediocampista,74
+Corea del Sur,Cho Guesung,Delantero,77
+Corea del Sur,Lee Jaesung,Mediocampista,77
+Corea del Sur,Hwang Heechan,Delantero,78
+Corea del Sur,Song Bumkeun,Portero,68
+Corea del Sur,Lee Taeseok,Defensa,69
+Corea del Sur,Cho Wije,Defensa,68
+Corea del Sur,Kim Moonhwan,Defensa,71
+Corea del Sur,Park Jinseob,Defensa,71
+Corea del Sur,Bae Junho,Mediocampista,72
+Corea del Sur,Oh Hyeongyu,Delantero,75
+Corea del Sur,Lee Kangin,Mediocampista,78
+Corea del Sur,Yang Hyunjun,Mediocampista,73
+Corea del Sur,Jo Hyeonwoo,Portero,74
+Corea del Sur,Seol Youngwoo,Defensa,71
+Corea del Sur,Castrop Jens,Defensa,68
+Corea del Sur,Kim Jingyu,Mediocampista,70
+Corea del Sur,Eom Jisung,Mediocampista,70
+Corea del Sur,Lee Donggyeong,Mediocampista,72
+México,Rangel Raul,Portero,73
+México,Sanchez Jorge,Defensa,76
+México,Montes Cesar,Defensa,78
+México,Alvarez Edson,Defensa,82
+México,Vasquez Johan,Defensa,77
+México,Lira Erik,Mediocampista,72
+México,Romo Luis,Mediocampista,75
+México,Fidalgo Alvaro,Mediocampista,74
+México,Jimenez Raul,Delantero,82
+México,Vega Alexis,Delantero,77
+México,Gimenez Santiago,Delantero,83
+México,Acevedo Carlos,Portero,72
+México,Ochoa Guillermo,Portero,81
+México,Gonzalez Armando,Delantero,70
+México,Reyes Israel,Defensa,73
+México,Quinones Julian,Delantero,74
+México,Pineda Orbelin,Mediocampista,77
+México,Vargas Obed,Mediocampista,70
+México,Mora Gilberto,Mediocampista,67
+México,Chavez Mateo,Defensa,70
+México,Huerta Cesar,Delantero,74
+México,Martinez Guillermo,Delantero,72
+México,Gallardo Jesus,Defensa,76
+México,Chavez Luis,Mediocampista,77
+México,Alvarado Roberto,Delantero,75
+México,Gutierrez Brian,Mediocampista,71
+Marruecos,Bounou Yassine,Portero,86
+Marruecos,Hakimi Achraf,Defensa,88
+Marruecos,Mazraoui Noussair,Defensa,83
+Marruecos,Amrabat Sofyan,Mediocampista,83
+Marruecos,Saadane Marwane,Defensa,69
+Marruecos,Bouaddi Ayyoub,Mediocampista,70
+Marruecos,Talbi Chemsdine,Mediocampista,69
+Marruecos,Ounahi Azzedine,Mediocampista,79
+Marruecos,Rahimi Souane,Delantero,74
+Marruecos,Diaz Brahim,Delantero,83
+Marruecos,Saibari Ismael,Mediocampista,77
+Marruecos,El Kajoui Munir,Portero,74
+Marruecos,El Ouahdi Zakaria,Defensa,70
+Marruecos,Diop Issa,Defensa,75
+Marruecos,El Mourabet Samir,Mediocampista,68
+Marruecos,Yassine Gessime,Mediocampista,67
+Marruecos,Sbai Amine,Delantero,68
+Marruecos,Riad Chadi,Defensa,72
+Marruecos,Belammari Youssef,Defensa,68
+Marruecos,El Kaabi Ayoub,Delantero,80
+Marruecos,Amaimouni Ayoube,Delantero,68
+Marruecos,Tagnaouti Ahmed Reda,Portero,71
+Marruecos,El Khannouss Bilal,Mediocampista,79
+Marruecos,El Aynaoui Neil,Mediocampista,74
+Marruecos,Halhal Redouane,Defensa,68
+Marruecos,Salah Eddine Anass,Defensa,70
+Países Bajos,Verbruggen Bart,Portero,79
+Países Bajos,Geertruida Lutsharel,Defensa,78
+Países Bajos,De Roon Marten,Mediocampista,80
+Países Bajos,Van Dijk Virgil,Defensa,89
+Países Bajos,Ake Nathan,Defensa,83
+Países Bajos,Van Hecke Jan Paul,Defensa,76
+Países Bajos,Kluivert Justin,Mediocampista,77
+Países Bajos,Gravenberch Ryan,Mediocampista,82
+Países Bajos,Weghorst Wout,Delantero,78
+Países Bajos,Depay Memphis,Delantero,84
+Países Bajos,Gakpo Cody,Delantero,85
+Países Bajos,Wieffer Mats,Defensa,75
+Países Bajos,Roefs Robin,Portero,67
+Países Bajos,Reijnders Tijjani,Mediocampista,82
+Países Bajos,Van De Ven Micky,Defensa,82
+Países Bajos,Til Guus,Mediocampista,75
+Países Bajos,Lang Noa,Delantero,77
+Países Bajos,Malen Donyell,Delantero,80
+Países Bajos,Brobbey Brian,Delantero,77
+Países Bajos,Koopmeiners Teun,Mediocampista,85
+Países Bajos,De Jong Frenkie,Mediocampista,87
+Países Bajos,Dumfries Denzel,Defensa,83
+Países Bajos,Flekken Mark,Portero,78
+Países Bajos,Summerville Crysencio,Delantero,76
+Países Bajos,Hato Jorrel,Defensa,72
+Países Bajos,Timber Quinten,Mediocampista,77
+Nueva Zelanda,Crocombe Max,Portero,69
+Nueva Zelanda,Payne Tim,Defensa,65
+Nueva Zelanda,De Vries Francis,Defensa,64
+Nueva Zelanda,Bindon Tyler,Defensa,67
+Nueva Zelanda,Boxall Michael,Defensa,68
+Nueva Zelanda,Bell Joe,Mediocampista,68
+Nueva Zelanda,Rogerson Logan,Delantero,67
+Nueva Zelanda,Stamenic Marko,Mediocampista,70
+Nueva Zelanda,Wood Chris,Delantero,78
+Nueva Zelanda,Singh Sarpreet,Mediocampista,69
+Nueva Zelanda,Just Elijah,Mediocampista,70
+Nueva Zelanda,Paulsen Alex,Portero,65
+Nueva Zelanda,Cacace Liberato,Defensa,69
+Nueva Zelanda,Rufer Alex,Mediocampista,67
+Nueva Zelanda,Pijnaker Nando,Defensa,66
+Nueva Zelanda,Surman Finn,Defensa,66
+Nueva Zelanda,Barbarouses Kosta,Delantero,69
+Nueva Zelanda,Waine Ben,Delantero,70
+Nueva Zelanda,Old Ben,Mediocampista,68
+Nueva Zelanda,Mccowatt Callum,Mediocampista,69
+Nueva Zelanda,Randall Jesse,Delantero,67
+Nueva Zelanda,Woud Michael,Portero,67
+Nueva Zelanda,Thomas Ryan,Mediocampista,68
+Nueva Zelanda,Elliot Callan,Defensa,65
+Nueva Zelanda,Bayliss Lachlan,Mediocampista,65
+Nueva Zelanda,Smith Tommy,Defensa,67
+Noruega,Nyland Orjan,Portero,78
+Noruega,Thorsby Morten,Mediocampista,74
+Noruega,Ajer Kristoffer,Defensa,77
+Noruega,Ostigard Leo,Defensa,77
+Noruega,Moller Wolfe David,Defensa,72
+Noruega,Berg Patrick,Mediocampista,74
+Noruega,Sorloth Alexander,Delantero,83
+Noruega,Berge Sander,Mediocampista,80
+Noruega,Haaland Erling,Delantero,91
+Noruega,Odegaard Martin,Mediocampista,88
+Noruega,Strand Larsen Jorgen,Delantero,78
+Noruega,Tangvik Sander,Portero,64
+Noruega,Selvik Egil,Portero,71
+Noruega,Aursnes Fredrik,Mediocampista,76
+Noruega,Bjorkan Fredrik Andre,Defensa,73
+Noruega,Holmgren Pedersen Marcus,Defensa,74
+Noruega,Heggem Torbjorn,Defensa,72
+Noruega,Thorstvedt Kristian,Mediocampista,76
+Noruega,Aasgaard Thelo,Mediocampista,72
+Noruega,Nusa Antonio,Delantero,77
+Noruega,Schjelderup Andreas,Mediocampista,74
+Noruega,Bobb Oscar,Mediocampista,75
+Noruega,Hauge Jens Petter,Mediocampista,73
+Noruega,Langas Sondre,Defensa,68
+Noruega,Falchener Henrik,Defensa,66
+Noruega,Ryerson Julian,Defensa,75
+Panamá,Mejia Luis,Portero,70
+Panamá,Blackman Cesar,Defensa,68
+Panamá,Cordoba Jose,Defensa,69
+Panamá,Escobar Fidel,Defensa,72
+Panamá,Farina Edgardo,Defensa,66
+Panamá,Martinez Cristian,Mediocampista,68
+Panamá,Rodriguez Jose Luis,Mediocampista,71
+Panamá,Carrasquilla Adalberto,Mediocampista,73
+Panamá,Rodriguez Tomas,Delantero,69
+Panamá,Diaz Ismael,Mediocampista,74
+Panamá,Barcenas Edgar Yoel,Mediocampista,73
+Panamá,Samudio Cesar,Portero,66
+Panamá,Ramos Jiovany,Defensa,66
+Panamá,Harvey Carlos,Defensa,67
+Panamá,Davis Eric,Defensa,70
+Panamá,Andrade Andres,Defensa,68
+Panamá,Fajardo Jose,Delantero,71
+Panamá,Waterman Cecilio,Delantero,71
+Panamá,Quintero Alberto,Mediocampista,69
+Panamá,Godoy Anibal,Mediocampista,70
+Panamá,Yanis Cesar,Mediocampista,68
+Panamá,Mosquera Orlando,Portero,68
+Panamá,Murillo Amir,Defensa,72
+Panamá,Londono Azarias,Delantero,66
+Panamá,Miller Roderick,Defensa,68
+Panamá,Gutierrez Jorge,Defensa,65
+Paraguay,Fernandez Gatito,Portero,74
+Paraguay,Velazquez Gustavo,Defensa,68
+Paraguay,Alderete Omar,Defensa,74
+Paraguay,Caceres Juan Jose,Defensa,71
+Paraguay,Balbuena Fabian,Defensa,77
+Paraguay,Alonso Junior,Defensa,75
+Paraguay,Sosa Ramon,Mediocampista,74
+Paraguay,Gomez Diego,Mediocampista,76
+Paraguay,Sanabria Antonio,Delantero,77
+Paraguay,Almiron Miguel,Mediocampista,81
+Paraguay,Mauricio,Mediocampista,71
+Paraguay,Gill Orlando,Portero,66
+Paraguay,Canale Jose,Defensa,67
+Paraguay,Cubas Andres,Mediocampista,73
+Paraguay,Gomez Gustavo,Defensa,77
+Paraguay,Bobadilla Damian,Mediocampista,72
+Paraguay,Romero Gamarra Alejandro,Delantero,73
+Paraguay,Arce Alex,Delantero,72
+Paraguay,Enciso Julio,Delantero,75
+Paraguay,Ojeda Braian,Mediocampista,70
+Paraguay,Avalos Gabriel,Delantero,70
+Paraguay,Olveira Gaston,Portero,65
+Paraguay,Galarza Matias,Mediocampista,71
+Paraguay,Caballero Gustavo,Mediocampista,69
+Paraguay,Pitta Isidro,Delantero,70
+Paraguay,Maidana Alexandro,Defensa,66
+Portugal,Diogo Costa,Portero,87
+Portugal,Nelson Semedo,Defensa,82
+Portugal,Ruben Dias,Defensa,88
+Portugal,Tomas Araujo,Defensa,74
+Portugal,Diogo Dalot,Defensa,81
+Portugal,Matheus Nunes,Mediocampista,82
+Portugal,Cristiano Ronaldo,Delantero,88
+Portugal,Bruno Fernandes,Mediocampista,88
+Portugal,Goncalo Ramos,Delantero,83
+Portugal,Bernardo Silva,Mediocampista,88
+Portugal,Joao Felix,Delantero,84
+Portugal,Jose Sa,Portero,81
+Portugal,Renato Veiga,Defensa,74
+Portugal,Goncalo Inacio,Defensa,78
+Portugal,Joao Neves,Mediocampista,80
+Portugal,Francisco Trincao,Delantero,78
+Portugal,Rafael Leao,Delantero,86
+Portugal,Pedro Neto,Delantero,82
+Portugal,Goncalo Guedes,Delantero,79
+Portugal,Joao Cancelo,Defensa,85
+Portugal,Ruben Neves,Mediocampista,83
+Portugal,Rui Silva,Portero,76
+Portugal,Vitinha,Mediocampista,84
+Portugal,Samu Costa,Defensa,72
+Portugal,Nuno Mendes,Defensa,83
+Portugal,Francisco Conceicao,Delantero,78
+Catar,Mahmoud Abunada,Portero,67
+Catar,Pedro Miguel,Defensa,70
+Catar,Lucas Mendes,Defensa,68
+Catar,Issa Laye,Defensa,66
+Catar,Jassem Gaber,Defensa,68
+Catar,Abdulaziz Hatem,Mediocampista,72
+Catar,Ahmed Alaaeldin,Delantero,71
+Catar,Edmilson Junior,Delantero,69
+Catar,Mohammed Muntari,Delantero,73
+Catar,Hassan Alhaydos,Delantero,74
+Catar,Akram Afif,Delantero,79
+Catar,Karim Boudiaf,Mediocampista,72
+Catar,Ayoub Aloui,Defensa,65
+Catar,Homam Ahmed,Defensa,68
+Catar,Yusuf Abdurisag,Delantero,67
+Catar,Boualem Khoukhi,Defensa,72
+Catar,Ahmed Alganehi,Mediocampista,66
+Catar,Sultan Albrake,Defensa,66
+Catar,Almoez Ali,Delantero,76
+Catar,Ahmed Fathy,Mediocampista,67
+Catar,Salah Zakaria,Portero,66
+Catar,Meshaal Barsham,Portero,69
+Catar,Assim Madibo,Mediocampista,70
+Catar,Tahsin Mohammed,Delantero,64
+Catar,Alhashmi Alhussein,Defensa,63
+Catar,Mohamed Manai,Delantero,65
+Arabia Saudí,Nawaf Alaqidi,Portero,74
+Arabia Saudí,Ali Majrashi,Defensa,68
+Arabia Saudí,Ali Lajami,Defensa,70
+Arabia Saudí,Abdulelah Alamri,Defensa,70
+Arabia Saudí,Hassan Altambakti,Defensa,72
+Arabia Saudí,Nasser Aldawsari,Mediocampista,72
+Arabia Saudí,Musab Aljuwayr,Mediocampista,73
+Arabia Saudí,Aiman Yahya,Delantero,69
+Arabia Saudí,Feras Albrikan,Delantero,74
+Arabia Saudí,Salem Aldawsari,Delantero,78
+Arabia Saudí,Saleh Alshehri,Delantero,76
+Arabia Saudí,Saud Abdulhamid,Defensa,73
+Arabia Saudí,Nawaf Bu Washl,Defensa,69
+Arabia Saudí,Hassan Kadish,Defensa,69
+Arabia Saudí,Abdullah Alkhaibari,Mediocampista,70
+Arabia Saudí,Ziyad Aljohani,Mediocampista,68
+Arabia Saudí,Khalid Alghannam,Delantero,67
+Arabia Saudí,Ala Alhajji,Mediocampista,66
+Arabia Saudí,Abdullah Alhamddan,Delantero,73
+Arabia Saudí,Sultan Mandash,Delantero,67
+Arabia Saudí,Mohammed Alowais,Portero,75
+Arabia Saudí,Ahmed Alkassar,Portero,66
+Arabia Saudí,Mohamed Kanno,Mediocampista,74
+Arabia Saudí,Moteb Alharbi,Defensa,67
+Arabia Saudí,Jehad Thikri,Defensa,66
+Arabia Saudí,Mohammed Abu Alshamat,Defensa,65
+Escocia,Gunn Angus,Portero,77
+Escocia,Hickey Aaron,Defensa,76
+Escocia,Robertson Andy,Defensa,86
+Escocia,Mctominay Scott,Mediocampista,82
+Escocia,Hanley Grant,Defensa,74
+Escocia,Tierney Kieran,Defensa,80
+Escocia,Mcginn John,Mediocampista,82
+Escocia,Fletcher Tyler,Mediocampista,67
+Escocia,Dykes Lyndon,Delantero,75
+Escocia,Adams Che,Delantero,76
+Escocia,Christie Ryan,Mediocampista,78
+Escocia,Kelly Liam,Portero,72
+Escocia,Hendry Jack,Defensa,73
+Escocia,Stewart Ross,Delantero,74
+Escocia,Souttar John,Defensa,75
+Escocia,Hyam Dominic,Defensa,71
+Escocia,Gannon-Doak Ben,Delantero,71
+Escocia,Hirst George,Delantero,72
+Escocia,Ferguson Lewis,Mediocampista,77
+Escocia,Shankland Lawrence,Delantero,75
+Escocia,Gordon Craig,Portero,74
+Escocia,Patterson Nathan,Defensa,74
+Escocia,Mclean Kenny,Mediocampista,74
+Escocia,Ralston Anthony,Defensa,72
+Escocia,Curtis Findlay,Delantero,66
+Escocia,Mckenna Scott,Defensa,75
+Senegal,Diouf Yehvann,Portero,74
+Senegal,Sarr Mamadou,Defensa,72
+Senegal,Koulibaly Kalidou,Defensa,85
+Senegal,Seck Abdoulaye,Defensa,71
+Senegal,Gueye Idrissa Gana,Mediocampista,84
+Senegal,Ciss Pathe,Mediocampista,73
+Senegal,Diao Assane,Delantero,74
+Senegal,Camara Lamine,Mediocampista,78
+Senegal,Dieng Bamba,Delantero,73
+Senegal,Mane Sadio,Delantero,87
+Senegal,Jackson Nicolas,Delantero,82
+Senegal,Ndiaye Cherif,Delantero,72
+Senegal,Ndiaye Iliman,Delantero,78
+Senegal,Jakobs Ismail,Defensa,74
+Senegal,Diatta Krepin,Defensa,76
+Senegal,Mendy Edouard,Portero,83
+Senegal,Sarr Pape Matar,Mediocampista,79
+Senegal,Sarr Ismaila,Delantero,82
+Senegal,Niakhate Moussa,Defensa,77
+Senegal,Mbaye Ibrahim,Delantero,70
+Senegal,Diarra Habib,Mediocampista,72
+Senegal,Ndiaye Bara Sapoko,Mediocampista,67
+Senegal,Diaw Mory,Portero,68
+Senegal,Mendy Antoine,Defensa,68
+Senegal,Diouf El Hadji Malick,Defensa,70
+Senegal,Gueye Pape,Mediocampista,74
+Sudáfrica,Williams Ronwen,Portero,74
+Sudáfrica,Matuludi Thabang,Defensa,64
+Sudáfrica,Ndamane Khulumani,Defensa,65
+Sudáfrica,Mokoena Teboho,Mediocampista,73
+Sudáfrica,Mbatha Thalente,Mediocampista,70
+Sudáfrica,Modiba Aubrey,Defensa,69
+Sudáfrica,Appollis Oswin,Delantero,73
+Sudáfrica,Moremi Tshepang,Delantero,67
+Sudáfrica,Foster Lyle,Delantero,74
+Sudáfrica,Mofokeng Relebohile,Delantero,72
+Sudáfrica,Zwane Themba,Mediocampista,72
+Sudáfrica,Maseko Thapelo,Delantero,67
+Sudáfrica,Sithole Sphephelo,Mediocampista,68
+Sudáfrica,Mbokazi Mbekezeli,Defensa,65
+Sudáfrica,Rayners Iqraam,Delantero,70
+Sudáfrica,Chaine Sipho,Portero,68
+Sudáfrica,Makgopa Evidence,Delantero,71
+Sudáfrica,Kabini Samukele,Defensa,65
+Sudáfrica,Sibisi Nkosinathi,Defensa,67
+Sudáfrica,Mudau Khuliso,Defensa,69
+Sudáfrica,Okon Ime,Defensa,65
+Sudáfrica,Goss Ricardo,Portero,64
+Sudáfrica,Adams Jayden,Mediocampista,68
+Sudáfrica,Makhanya Olwethu,Defensa,63
+Sudáfrica,Sebelebele Kamogelo,Delantero,66
+Sudáfrica,Cross Bradley,Defensa,63
+España,Raya David,Portero,85
+España,Pubill Marc,Defensa,73
+España,Grimaldo Alex,Defensa,82
+España,Garcia Eric,Defensa,78
+España,Llorente Marcos,Defensa,81
+España,Merino Mikel,Mediocampista,83
+España,Torres Ferran,Delantero,82
+España,Ruiz Fabian,Mediocampista,84
+España,Gavi,Mediocampista,85
+España,Olmo Dani,Mediocampista,86
+España,Pino Yeremy,Delantero,78
+España,Porro Pedro,Defensa,80
+España,Garcia Joan,Portero,74
+España,Laporte Aymeric,Defensa,84
+España,Baena Alex,Mediocampista,75
+España,Rodri,Mediocampista,91
+España,Williams Nico,Delantero,84
+España,Zubimendi Martin,Mediocampista,82
+España,Yamal Lamine,Delantero,87
+España,Pedri,Mediocampista,88
+España,Oyarzabal Mikel,Delantero,82
+España,Cubarsi Pau,Defensa,78
+España,Simon Unai,Portero,84
+España,Cucurella Marc,Defensa,80
+España,Munoz Victor,Delantero,70
+España,Iglesias Borja,Delantero,74
+Suecia,Widell Zetterstrom Jacob,Portero,70
+Suecia,Lagerbielke Gustaf,Defensa,73
+Suecia,Lindelof Victor,Defensa,80
+Suecia,Hien Isak,Defensa,79
+Suecia,Gudmundsson Gabriel,Defensa,74
+Suecia,Johansson Herman,Defensa,68
+Suecia,Bergvall Lucas,Mediocampista,77
+Suecia,Svensson Daniel,Defensa,72
+Suecia,Isak Alexander,Delantero,87
+Suecia,Nygren Benjamin,Mediocampista,73
+Suecia,Elanga Anthony,Delantero,77
+Suecia,Johansson Viktor,Portero,72
+Suecia,Sema Ken,Mediocampista,74
+Suecia,Ekdal Hjalmar,Defensa,72
+Suecia,Starfelt Carl,Defensa,75
+Suecia,Karlstrom Jesper,Mediocampista,73
+Suecia,Gyokeres Viktor,Delantero,87
+Suecia,Ayari Yasin,Mediocampista,74
+Suecia,Svanberg Mattias,Mediocampista,74
+Suecia,Smith Eric,Defensa,70
+Suecia,Bernhardsson Alexander,Defensa,71
+Suecia,Zeneli Besfort,Mediocampista,70
+Suecia,Nordfeldt Kristoffer,Portero,72
+Suecia,Stroud Elliot,Defensa,65
+Suecia,Nilsson Gustaf,Delantero,73
+Suecia,Ali Taha,Delantero,67
+Suiza,Kobel Gregor,Portero,83
+Suiza,Muheim Miro,Defensa,72
+Suiza,Widmer Silvan,Defensa,76
+Suiza,Elvedi Nico,Defensa,79
+Suiza,Akanji Manuel,Defensa,85
+Suiza,Zakaria Denis,Mediocampista,78
+Suiza,Embolo Breel,Delantero,80
+Suiza,Freuler Remo,Mediocampista,81
+Suiza,Manzambi Johan,Mediocampista,71
+Suiza,Xhaka Granit,Mediocampista,84
+Suiza,Ndoye Dan,Delantero,79
+Suiza,Mvogo Yvon,Portero,73
+Suiza,Rodriguez Ricardo,Defensa,78
+Suiza,Jashari Ardon,Mediocampista,74
+Suiza,Sow Djibril,Mediocampista,73
+Suiza,Fassnacht Christian,Delantero,74
+Suiza,Vargas Ruben,Delantero,78
+Suiza,Coemert Eray,Defensa,73
+Suiza,Okafor Noah,Delantero,78
+Suiza,Aebischer Michel,Mediocampista,74
+Suiza,Keller Marvin,Portero,66
+Suiza,Rieder Fabian,Mediocampista,74
+Suiza,Amdouni Zeki,Delantero,76
+Suiza,Amenda Aurele,Defensa,71
+Suiza,Jaquez Luca,Defensa,71
+Suiza,Itten Cedric,Delantero,73
+Túnez,Chamakh Mouhib,Portero,67
+Túnez,Abdi Ali,Defensa,70
+Túnez,Talbi Montassar,Defensa,73
+Túnez,Rekik Omar,Defensa,70
+Túnez,Arous Adam,Defensa,65
+Túnez,Bronn Dylan,Defensa,72
+Túnez,Achouri Elias,Delantero,72
+Túnez,Saad Elias,Delantero,72
+Túnez,Mastouri Hazem,Delantero,72
+Túnez,Mejbri Hannibal,Mediocampista,76
+Túnez,Gharbi Ismael,Mediocampista,74
+Túnez,Ben Ouanes Mortadha,Defensa,68
+Túnez,Khedira Rani,Mediocampista,73
+Túnez,Ayari Khalil,Mediocampista,70
+Túnez,Hadj Mahmoud Mohamed,Mediocampista,68
+Túnez,Dahmen Aymen,Portero,73
+Túnez,Skhiri Ellyes,Mediocampista,79
+Túnez,Elloumi Rayan,Delantero,67
+Túnez,Chaouat Firas,Delantero,70
+Túnez,Valery Yan,Defensa,69
+Túnez,Ben Hmida Mohamed Amine,Defensa,67
+Túnez,Ben Hessen Sabri,Portero,65
+Túnez,Neffati Moutaz,Defensa,65
+Túnez,Chikhaoui Raed,Defensa,64
+Túnez,Slimane Anis,Mediocampista,73
+Túnez,Tounekti Sebastian,Mediocampista,70
+Turquía,Gunok Mert,Portero,79
+Turquía,Celik Zeki,Defensa,80
+Turquía,Demiral Merih,Defensa,82
+Turquía,Soyuncu Caglar,Defensa,81
+Turquía,Ozcan Salih,Mediocampista,77
+Turquía,Kokcu Orkun,Mediocampista,80
+Turquía,Akturkoglu Kerem,Delantero,80
+Turquía,Guler Arda,Delantero,84
+Turquía,Gul Deniz,Delantero,71
+Turquía,Calhanoglu Hakan,Mediocampista,86
+Turquía,Yildiz Kenan,Delantero,82
+Turquía,Bayindir Altay,Portero,76
+Turquía,Elmali Eren,Defensa,72
+Turquía,Bardakci Abdulkerim,Defensa,75
+Turquía,Kabak Ozan,Defensa,77
+Turquía,Yuksek Ismail,Mediocampista,75
+Turquía,Kahveci Irfan Can,Delantero,76
+Turquía,Muldur Mert,Defensa,76
+Turquía,Akgun Yunus,Delantero,74
+Turquía,Kadioglu Ferdi,Defensa,80
+Turquía,Yilmaz Baris Alper,Delantero,76
+Turquía,Ayhan Kaan,Mediocampista,76
+Turquía,Cakir Ugurcan,Portero,80
+Turquía,Aydin Oguz,Delantero,71
+Turquía,Akaydin Samet,Defensa,72
+Turquía,Uzun Can,Delantero,72
+Uruguay,Rochet Sergio,Portero,80
+Uruguay,Gimenez Jose Maria,Defensa,85
+Uruguay,Caceres Sebastian,Defensa,73
+Uruguay,Araujo Ronald,Defensa,85
+Uruguay,Ugarte Manuel,Mediocampista,83
+Uruguay,Bentancur Rodrigo,Mediocampista,83
+Uruguay,De La Cruz Nicolas,Mediocampista,79
+Uruguay,Valverde Federico,Mediocampista,88
+Uruguay,Nunez Darwin,Delantero,86
+Uruguay,De Arrascaeta Giorgian,Mediocampista,82
+Uruguay,Pellistri Facundo,Delantero,76
+Uruguay,Mele Santiago,Portero,73
+Uruguay,Varela Guillermo,Defensa,72
+Uruguay,Canobbio Agustin,Mediocampista,74
+Uruguay,Martinez Emiliano,Mediocampista,72
+Uruguay,Olivera Mathias,Defensa,78
+Uruguay,Vina Matias,Defensa,76
+Uruguay,Rodriguez Brian Paul,Delantero,74
+Uruguay,Aguirre Rodrigo,Delantero,72
+Uruguay,Araujo Maxi,Mediocampista,74
+Uruguay,Vinas Federico,Delantero,72
+Uruguay,Piquerez Joaquin,Defensa,74
+Uruguay,Muslera Fernando,Portero,79
+Uruguay,Bueno Santiago,Defensa,74
+Uruguay,Sanabria Juan Manuel,Mediocampista,68
+Uruguay,Zalazar Rodrigo,Mediocampista,70
+Estados Unidos,Turner Matt,Portero,78
+Estados Unidos,Dest Sergino,Defensa,78
+Estados Unidos,Richards Chris,Defensa,78
+Estados Unidos,Adams Tyler,Mediocampista,80
+Estados Unidos,Robinson Antonee,Defensa,80
+Estados Unidos,Trusty Auston,Defensa,73
+Estados Unidos,Reyna Giovanni,Mediocampista,79
+Estados Unidos,Mckennie Weston,Mediocampista,80
+Estados Unidos,Pepi Ricardo,Delantero,77
+Estados Unidos,Pulisic Christian,Delantero,86
+Estados Unidos,Aaronson Brenden,Mediocampista,77
+Estados Unidos,Robinson Miles,Defensa,75
+Estados Unidos,Ream Tim,Defensa,73
+Estados Unidos,Berhalter Sebastian,Mediocampista,70
+Estados Unidos,Roldan Cristian,Mediocampista,72
+Estados Unidos,Freeman Alex,Defensa,70
+Estados Unidos,Tillman Malik,Mediocampista,74
+Estados Unidos,Arfsten Max,Defensa,69
+Estados Unidos,Wright Haji,Delantero,75
+Estados Unidos,Balogun Folarin,Delantero,78
+Estados Unidos,Weah Timothy,Delantero,76
+Estados Unidos,Mckenzie Mark,Defensa,73
+Estados Unidos,Scally Joe,Defensa,73
+Estados Unidos,Freese Matt,Portero,73
+Estados Unidos,Brady Chris,Portero,68
+Estados Unidos,Zendejas Alex,Delantero,70
+Uzbekistán,Yusupov Utkir,Portero,68
+Uzbekistán,Khusanov Abdukodir,Defensa,74
+Uzbekistán,Alijonov Khojiakbar,Defensa,67
+Uzbekistán,Sayfiev Farrukh,Defensa,67
+Uzbekistán,Ashurmatov Rustam,Defensa,68
+Uzbekistán,Mozgovoy Akmal,Mediocampista,67
+Uzbekistán,Shukurov Otabek,Mediocampista,72
+Uzbekistán,Iskanderov Jamshid,Mediocampista,68
+Uzbekistán,Xamrobekov Odiljon,Mediocampista,68
+Uzbekistán,Masharipov Jaloliddin,Mediocampista,73
+Uzbekistán,Urunov Oston,Mediocampista,72
+Uzbekistán,Nematov Abduvohid,Portero,65
+Uzbekistán,Nasrullaev Sherzod,Defensa,67
+Uzbekistán,Shomurodov Eldor,Delantero,78
+Uzbekistán,Eshmurodov Umar,Defensa,66
+Uzbekistán,Ergashev Botirali,Portero,64
+Uzbekistán,Khamdamov Dostonbek,Mediocampista,69
+Uzbekistán,Abdullaev Abdulla,Defensa,66
+Uzbekistán,Ganiev Azizjon,Mediocampista,67
+Uzbekistán,Amonov Azizbek,Delantero,68
+Uzbekistán,Sergeev Igor,Delantero,73
+Uzbekistán,Fayzullaev Abbosbek,Mediocampista,72
+Uzbekistán,Esanov Sherzod,Mediocampista,65
+Uzbekistán,Karimov Behruzjon,Defensa,62
+Uzbekistán,Ulmasaliyev Avazbek,Defensa,63
+Uzbekistán,Urozov Jakhongir,Defensa,63
